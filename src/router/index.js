@@ -72,11 +72,6 @@ const routes = [
     component: () => import('../views/judging/Medal.vue')
   },
   {
-    path: '/parts',
-    name: 'Parts',
-    component: () => import('../views/judging/Parts')
-  },
-  {
     path: '/safety',
     name: 'Safety',
     component: () => import('../views/judging/Safety')

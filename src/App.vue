@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <Header/>
-    <router-view/>
+      <Header/>
+      <div id="main">
+          <router-view/>
+      </div>
+      <Footer/>
   </div>
 </template>
 
@@ -9,34 +12,24 @@
 
 
 <script>
-  import Header from './components/content/Header.vue'
+  import Header from 'components/content/Header.vue'
+  import Footer from 'components/content/Footer.vue'
 
   export default {
       components: {
-          Header
+          Header,
+          Footer
       }
   }
 
 </script>
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+    display: flex;
+    flex-flow: column;
+    min-height: 95vh;
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+#main {
+    flex: 1;
 }
 </style>

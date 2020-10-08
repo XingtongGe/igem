@@ -1,4 +1,5 @@
 <template>
+    <div id="header">
     <el-menu
             mode="horizontal"
             router
@@ -23,7 +24,6 @@
         <el-submenu index="4">
             <template slot="title">Judging</template>
             <el-menu-item index="/medal">Medal</el-menu-item>
-            <el-menu-item index="/parts">Parts</el-menu-item>
             <el-menu-item index="/safety">Safety</el-menu-item>
         </el-submenu>
         <el-submenu index="5">
@@ -34,6 +34,7 @@
             <el-menu-item index="/attributions">Attributions</el-menu-item>
         </el-submenu>
     </el-menu>
+    </div>
 </template>
 
 <script>
