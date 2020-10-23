@@ -1,6 +1,15 @@
 <html>
 <link rel="stylesheet" type="text/css"
       href="https://2020.igem.org/Template:BIT/css/multi_drop_menu?action=raw&ctype=text/css" />
+<script>
+    function changeColortoGreen(e) {
+        e.style.backgroundColor = 'rgb(31, 160, 174)';
+    }
+
+    function changeColortoBlack(e) {
+        e.style.backgroundColor = 'rgb(51, 51, 51)';
+    }
+</script>
 <body>
 <div id="main-content">
     <header>
@@ -80,26 +89,32 @@
                 <hr>
                 <br>
 
-                <img src="https://2020.igem.org/wiki/images/9/97/T--BIT--youxiang.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
-                <span style="color: rgb(255, 255, 255);">igem_bit@outlook.com </span><br>
+                <!-- <img src="https://2020.igem.org/wiki/images/9/97/T--BIT--youxiang.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+                <br> -->
+                <span style="color: rgb(255, 255, 255);">email: igem_bit@outlook.com </span><br>
 
                 <br>
 
 
-                <a href="https://weibo.com/u/5615996310" style="text-decoration: none">
-                    <img src="https://2020.igem.org/wiki/images/9/90/T--BIT--weibo.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+                <a href="https://weibo.com/u/5615996310" style="text-decoration: none;">
+                    <img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/9/90/T--BIT--weibo.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
                 </a>
 
 
 
-                <a href="https://mobile.twitter.com/iGEM_BIT" style="text-decoration: none">
-                    <img src="https://2020.igem.org/wiki/images/2/21/T--BIT--ttww.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+                <a class="a-img" href="https://mobile.twitter.com/iGEM_BIT" style="text-decoration: none">
+                    <img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/2/21/T--BIT--ttww.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
                 </a>
 
 
 
                 <a href="https://www.instagram.com/igem_bit" style="text-decoration: none">
-                    <img src="https://2020.igem.org/wiki/images/1/17/T--BIT--instagram.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+                    <img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/1/17/T--BIT--instagram.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+                </a>
+
+
+                <a href="https://github.com/a-layfolk/igem" style="text-decoration: none">
+                    <img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/1/10/T--BIT--git.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
                 </a>
 
 
@@ -108,18 +123,29 @@
 
             </div>
 
-            <br>
-            <br>
-
             <div class="nav-bar">
                 <p style="color: rgb(255, 255, 255)">BOOKMARK</p>
                 <hr>
                 <br>
                 <ul>
                     <!-- 无序列表 -->
-                    <li><a href="#1" style="color: rgb(255, 255, 255)">Background research</a></li>
-                    <li><a href="#2" style="color: rgb(255, 255, 255)">Program improvement</a></li>
-                    <li><a href="#3" style="color: rgb(255, 255, 255)">Education</a></li>
+                    <li><a href="#1" style="color: rgb(255, 255, 255)">1. Background</a></li>
+                    <ul>
+                        <li><a href="#1.1" style="color: rgb(255, 255, 255)">1.1 Initial stage of the project:</a></li>
+                        <li><a href="#1.2" style="color: rgb(255, 255, 255)">1.2 Final design of the project:</a></li>
+                    </ul>
+                    <li><a href="#2" style="color: rgb(255, 255, 255)">2. Project overview</a></li>
+                    <li><a href="#3" style="color: rgb(255, 255, 255)">3. Project specific design</a></li>
+                    <ul>
+                        <li><a href="#3.1" style="color: rgb(255, 255, 255)">3.1 Material</a></li>
+                        <li><a href="#3.2" style="color: rgb(255, 255, 255)">3.2 Chip production</a></li>
+                        <li><a href="#3.3" style="color: rgb(255, 255, 255)">3.3 Chip Chip structure</a></li>
+                        <li><a href="#3.4" style="color: rgb(255, 255, 255)">3.4 Test strip detection area</a></li>
+                        <li><a href="#3.5" style="color: rgb(255, 255, 255)">3.5 Temperature control for stable control of nucleic acid amplification</a></li>
+                        <li><a href="#3.6" style="color: rgb(255, 255, 255)">3.6  Mobile phone interaction module</a></li>
+                        <li><a href="#3.7" style="color: rgb(255, 255, 255)">3.7  Innovation</a></li>
+                    </ul>
+                    <li><a href="#4" style="color: rgb(255, 255, 255)">4. References</a></li>
                 </ul>
                 <br>
             </div>
@@ -128,28 +154,24 @@
 
 
     <article>
+        <a name="1"></a>
         <div style="background: url(https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/image-20201023164512576.png) no-repeat; height: 400px;">
-            <h1 style="color: rgb(255, 255, 255); padding-top: 33%; padding-left: 50%; font-size: 3rem;">Hardware</h1>
+            <h1 style="color: rgb(255, 255, 255); padding-top: 33%; padding-left: 50%; font-size: 3rem; font-family: 'Playfair Display', sans-serif;">Hardware</h1>
         </div>
-        <div class="inner">
-           
 
-            <a name="1"></a>
+
+        <div class="inner">
             <br>
             <a name="1.1"></a>
             <br>
-            <br>
-            <br>
-            <br>
 
             <h2 style="color: rgb(237, 88, 58)"> 1. Background </h2>
-            <h3>Initial stage of the project:</h3>
             <br>
             <br>
+            <h3 style="color: rgb(237, 88, 58)">1.1 Initial stage of the project:</h3>
             <br>
             <br>
-            <br>
-
+            
             <p>
                 The current COVID-19 detection platforms have problems 
                 such as cumbersome operation, large body size, they need 
@@ -170,26 +192,36 @@
                 area, and a signal detection and transduction area based on 
                 the specific biosensing function implemented. Meanwhile, for 
                 the application scenarios of instant inspection, we further 
-                design: 1) Parallel multi-channel detection method in sectors; 
-                2) Manual "whistle" type liquid path driving method and 
-                microvalve-based flow control method; 3) Reagent consumables 
-                Processing method; 4) Temperature control and detection system 
-                adapted to the downstream mobile phone support module.  
+                design:
             </p>
-            <div align="center">
-                <img src="https://2020.igem.org/wiki/images/8/87/T--BIT--HardWare_01.png"
-                    style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                    width: 50%"
-                >
-            </div>
-            <p>
-                Figure 1. Schematic diagram of integrated nucleic acid 
-                extraction and amplification detection centrifugal chip
+            <br>
+            <p style="text-indent: 2rem;"> 
+                1) Parallel multi-channel detection method in sectors; 
+            </p>
+            <p style="text-indent: 2rem;">
+                2) Manual "whistle" type liquid path driving method and 
+                microvalve-based flow control method;
+            </p> 
+            <p style="text-indent: 2rem;">
+                3) Reagent consumables Processing method; 
+            </p>
+            <p style="text-indent: 2rem;">  
+                4) Temperature control and detection system 
+                adapted to the downstream mobile phone support module.  
             </p>
 
             <br>
-            <br>
-            <br>
+            <div align="center">
+                <img src="https://2020.igem.org/wiki/images/8/87/T--BIT--HardWare_01.png"
+                    style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+                    width: 70%"
+                >
+                <p style="font-size: .5rem;">
+                    Figure 1. Schematic diagram of integrated nucleic acid 
+                    extraction and amplification detection centrifugal chip
+                </p>
+            </div>
+            
             <br>
             <br>
 
@@ -204,9 +236,6 @@
                 reagents or consumables.
             </p>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -230,9 +259,6 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
             <p>
                 In the signal detection part, the initial plan of the project is 
@@ -248,28 +274,29 @@
                 is added as the light source to the mobile phone holder to ensure the 
                 stability of the light source.  
             </p>
+            <br>
+            <br>
             <p>
                 Finally, it is planned to use 3D printing technology to complete 
                 the model. The figure below shows a mobile phone holder that matches 
                 a single model of mobile phone.  
             </p>
-            <img src="https://2020.igem.org/wiki/images/6/6c/T--BIT--HardWare_02.png"
-                 style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 25%"
-            >
-            <img src="https://2020.igem.org/wiki/images/3/38/T--BIT--HardWare_03.png"
-                 style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 25%"
-            >
-            <p>Figure 2. Conceptual diagram of a mobile phone external device</p>
+            <br>
+            <div align="center">
+                <img src="https://2020.igem.org/wiki/images/6/6c/T--BIT--HardWare_02.png"
+                    style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+                    width: 52%"
+                >
+                <img src="https://2020.igem.org/wiki/images/3/38/T--BIT--HardWare_03.png"
+                    style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+                    width: 41%"
+                >
+                <p style="font-size: .8rem">Figure 2. Conceptual diagram of a mobile phone external device</p>
+            </div>
+            <br>
+            <br>
+          
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-           
             <p>
                 In the drive design of the centrifugal chip, the initial plan of the project 
                 is to adopt a whistle-type centrifugal chip design scheme based on the "whistle 
@@ -282,14 +309,16 @@
                 the directional movement of the fluid and make the fluid stay and work in a 
                 specific area.
             </p>
+            <br>
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/d/d5/T--BIT--HardWare_04.png"
                  style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 25%"
+                 width: 75%"
                 >
+                <p style="font-size: .8rem;">Figure3. Schematic diagram of manual "whistle" type hydraulic drive principle</p>
             </div>
 
-            <a anem="1.2"></a>
+            <a name="1.2"></a>
             <br>
             <br>
             <br>
@@ -297,10 +326,7 @@
             <br>
 
            
-            <h3>Final design of the project:</h3>
-            <br>
-            <br>
-            <br>
+            <h3 style="color: rgb(237, 88, 58)">1.2 Final design of the project:</h3>
             <br>
             <br>
             <p>
@@ -315,9 +341,6 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
             <p>
                 For the sample pre-treatment area planned to be built at the beginning of 
@@ -330,9 +353,6 @@
                 signals into nucleic acid signals before the microfluidic chip injection.
             </p>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -353,9 +373,6 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
             <p>
                 Corresponding to the changes in the above design ideas, we only 
@@ -367,9 +384,6 @@
                 chamber, as well as the injection port and microchannels.    
             </p>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -385,9 +399,6 @@
                 detection of experimental results. 
             </p>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -408,10 +419,7 @@
             <br>
             <br>
 
-            <h2>2. Project overview</h2>
-            <br>
-            <br>
-            <br>
+            <h2 style="color: rgb(237, 88, 58)">2. Project overview</h2>
             <br>
             <br>
             <p>
@@ -427,9 +435,6 @@
                 to drive the liquid path of the microfluidic chip. 
             </p>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -451,9 +456,6 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
             <p>
                 The temperature control module is mainly composed of a single-chip 
@@ -462,9 +464,6 @@
                 reactions.  
             </p>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -478,27 +477,27 @@
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/e/eb/T--BIT--HardWare_05.jpg"
                      style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 25%"
+                 width: 80%"
                 >
+                <p style="font-size: .8rem;">
+                    Figure 4. General design of hardware
+                </p>
             </div>
-            <p>
-                Figure 4. General design of hardware
-            </p>
+            
 
             <a name="3"></a>
+            <br>
+            <br>
+            <br>
             <a name="3.1"></a>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
-            <h2>3. Project specific design</h2>
-            <h3>1 Material:</h3>
+            <h2 style="color: rgb(237, 88, 58)">3. Project specific design</h2>
+            <br>
+            <br>
+            <h3 style="color: rgb(237, 88, 58)">3.1 Material:</h3>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -518,9 +517,6 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
             <p>
                 Common microfluidic chip materials include inorganic materials silicon 
@@ -528,16 +524,54 @@
                 polymethylmethacrylate (PMMA) and cloth, etc. Their respective processing 
                 methods and physical properties are shown in Table 1. 
             </p>
-            <table>
-                <tr>
-                    xxxxxxxxxxxxx
+            <br>
+            <table border="1px"
+            style="border-collapse: collapse;
+            text-align: center;
+            ">
+                <caption style="caption-side: bottom; font-size: .8rem;">
+                    Table 1. Summary of common microfluidic chip processing methods and physical characteristics
+                </caption>
+                <tr  style="background-color: rgb(230, 230, 230); height: 5rem;">
+                   <th width="120rem">Material</th>
+                   <th width="120rem">Light transmittance</th>
+                   <th width="120rem">Toughness</th>
+                   <th width="120rem">Permeability</th>
+                   <th>processing method</th>
+                </tr>
+                <tr style="background-color: rgb(240, 240, 240); height: 5rem">
+                    <th>Fabric </th>
+                    <td>Poor</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                    <td style="text-align: left; padding: 2rem;">Weaving, wax transfer, cutting, photolithography, etc.</td>
+                </tr>
+                <tr  style="background-color: rgb(230, 230, 230); height: 5rem">
+                    <th>Silicon</th>
+                    <td>Good</td>
+                    <td>Low</td>
+                    <td>Poor</td>
+                    <td style="text-align: left; padding: 2rem;" >Lithography and etching, etc.</td>
+                </tr>
+                <tr style="background-color: rgb(240, 240, 240); height: 5rem;">
+                    <th>PMMA</th>
+                    <td>Good</td>
+                    <td>Low</td>
+                    <td>Poor</td>
+                    <td style="text-align: left; padding: 2rem;">Injection molding, mold hot pressing and CNC milling, etc.</td>
+                </tr>
+                <tr  style="background-color: rgb(230, 230, 230); height: 10rem">
+                    <th>PDMS</th>
+                    <td>Good</td>
+                    <td>High</td>
+                    <td>Good</td>
+                    <td style="text-align: left; padding: 2rem;">
+                        Injection molding, mold hot pressing and CNC milling, etc.
+                        Hot pressing, injection molding, molding, laser cutting, 3D printing, etc.
+                    </td>
                 </tr>
             </table>
-            <p>Table 1. Summary of common microfluidic chip processing methods and physical characteristics</p>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -561,10 +595,7 @@
             <br>
             <br>
 
-            <h3>2 Chip production:</h3>
-            <br>
-            <br>
-            <br>
+            <h3 style="color: rgb(237, 88, 58)">3.2 Chip production:</h3>
             <br>
             <br>
             <p>
@@ -572,9 +603,6 @@
                 manufacturing process of PMMA has been mature, and its processing 
                 method is simple and easy and the micro-manufacturing cost is low.  
             </p>
-            <br>
-            <br>
-            <br>
             <br>
             <br>
             <p>
@@ -591,29 +619,34 @@
                 place the rolling bearing in the center of the chip to complete the 
                 centrifugal chip processing.  
             </p>
+            <br>
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/0/0e/T--BIT--HardWare_06.png"
                      style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
                  width: 50%"
                 >
+                <p style="font-size: .8rem;">Figure5. Chip surface cleaning process</p>
             </div>
-            <p>Figure5. Chip surface cleaning process</p>
+            
+            <br>
             
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/4/4c/T--BIT--HardWare_07.png"
                      style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
                  width: 50%"
                 >
+                <p style="font-size: .8rem;">Figure6. Chip bonding process</p>
             </div>
-            <p>Figure6. Chip bonding process</p>
-
+           
+            <br>
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/0/04/T--BIT--HardWare_08.png"
                      style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 50%"
+                     width: 50%"
                 >
+                <p style="font-size: .8rem;">Figure7. Centrifugal chip physical map</p>
             </div>
-            <p>Figure7. Centrifugal chip physical map</p>
+            
 
 
             <a anme="3.3"></a>
@@ -623,10 +656,7 @@
             <br>
             <br>
 
-            <h3>3 Chip structure:</h3>
-            <br>
-            <br>
-            <br>
+            <h3 style="color: rgb(237, 88, 58)">3.3 Chip structure:</h3>
             <br>
             <br>
 
@@ -646,9 +676,6 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
             <p>
                 The overall construction frame of the disc chip is a disc-like disc, 
@@ -661,9 +688,6 @@
                 into the next chamber.  
             </p>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -691,22 +715,24 @@
                 3.9mm*59mm, which is used to store the test strip for subsequent testing 
                 operations.
             </p>
-            <img src="https://2020.igem.org/wiki/images/5/58/T--BIT--HardWare_09.png"
-                    style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                    width: 25%"
-            >
-            <img src="https://2020.igem.org/wiki/images/7/7c/T--BIT--HardWare_10.png"
-                    style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                    width: 25%"
-            >
-            <p>Figure 8. Chip structure design concept diagram</p>
+            <br>
+            <div align="center">
+                <img src="https://2020.igem.org/wiki/images/5/58/T--BIT--HardWare_09.png"
+                        style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+                        width: 58%"
+                >
+                <img src="https://2020.igem.org/wiki/images/7/7c/T--BIT--HardWare_10.png"
+                        style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+                        width: 34%"
+                >
+                <p style="font-size: .8rem;">Figure 8. Chip structure design concept diagram</p>
+            </div>
+            
 
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
+           
 
             <p>
                 After the sample is added, hot melt glue or sealing film is used to seal 
@@ -724,19 +750,18 @@
                 smaller than the test strip by 0.2mm, the test strip will be stuck inside 
                 to ensure that the test strip will not fall. 
             </p>
-            <img src="https://2020.igem.org/wiki/images/7/7d/T--BIT--HardWare_11.jpg"
-                    style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                    width: 25%"
-            >
-            <img src="https://2020.igem.org/wiki/images/a/ad/T--BIT--HardWare_12.png"
-                    style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                    width: 25%"
-            >
-            <p>Figure9. Finger tip gyroscopic chip driving process</p>
-
             <br>
-            <br>
-            <br>
+            <div align="center">
+                <img src="https://2020.igem.org/wiki/images/7/7d/T--BIT--HardWare_11.jpg"
+                        style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+                        width: 69%"
+                >
+                <img src="https://2020.igem.org/wiki/images/a/ad/T--BIT--HardWare_12.png"
+                        style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+                        width: 26%"
+                >
+                <p>Figure9. Finger tip gyroscopic chip driving process</p>
+            </div>
             <br>
             <br>
 
@@ -755,12 +780,10 @@
             <br>
             <br>
 
-            <h3>4 Test strip detection area</h3>
+            <h3 style="color: rgb(237, 88, 58)">3.4 Test strip detection area</h3>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
+           
             <p>
                 After the nucleic acid signal is amplified by the previous RCA and HCR 
                 technology, the biological signal needs to be converted into a visual 
@@ -773,9 +796,7 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
+           
             <p>
                 Lateral chromatography technology uses a large-pore microporous membrane 
                 (NC membrane, nitrocellulose membrane) as a carrier to fix specific antigens, 
@@ -797,9 +818,7 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
+           
 
             <p>
                 This project designed a detection method based on lateral flow chromatography 
@@ -813,9 +832,7 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
+          
 
             <p>
                 Colloidal gold-based immunochromatographic assay (GICA) is a solid-phase 
@@ -843,9 +860,7 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
+          
 
             <p>
                 The standard lateral flow chromatography test paper includes five parts, 
@@ -856,29 +871,27 @@
                 figure:[6] 
             </p>
 
+            <br>
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/d/da/T--BIT--HardWare_14.jpg"
                     style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                    width: 25%"
+                    width: 50%"
                  >
-                 <p>
+                 <p style="font-size: .8rem;">
                     Figure10. Basic structure diagram of fluorescence immunochromatographic test strip 
                  </p>
             </div>
-
+            <br>
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/4/40/T--BIT--HardWare_13.jpg"
                     style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                    width: 25%"
+                    width: 50%"
                  >
-                 <p>
+                 <p style="font-size: .8rem;">
                     Figure11. Physical image of colloidal gold test strip
                  </p>
             </div>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -896,29 +909,27 @@
                 appear to prove a positive result. 
             </p>
 
+            <br>
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/1/1c/T--BIT--HardWare_15.jpg"
                     style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                    width: 25%"
+                    width: 40%"
                  >
-                 <p>
+                 <p style="font-size: .8rem;">
                     Figure12. Process of mixing liquid injection and flow into test strip 
                  </p>
             </div>
-
+            <br>
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/9/9b/T--BIT--HardWare_16.png"
                     style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                    width: 25%"
+                    width: 90%"
                  >
-                 <p>
+                 <p style="font-size: .8rem;">
                     Figure13. Positive result of the test strip
                  </p>
             </div>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -926,12 +937,13 @@
                 Repeat the above steps to react the blank control group without positive 
                 samples, and get the negative band results as shown in the figure below:
             </p>
+            <br>
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/8/8b/T--BIT--HardWare_17.png"
                      style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 25%"
+                 width: 70%"
                 >
-                <p>
+                <p style="font-size: .8rem;">
                     Figure14. Negative result of test strip 
                 </p>
             </div>
@@ -943,11 +955,8 @@
             <br>
             <br>
 
-            <h3>5 Temperature control for stable control of nucleic acid amplification</h3>
+            <h3 style="color: rgb(237, 88, 58)">3.5 Temperature control for stable control of nucleic acid amplification</h3>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -965,9 +974,6 @@
                 amplified at constant temperature. 
             </p>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -993,29 +999,25 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/5/55/T--BIT--HardWare_18.jpg"
                      style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
                      width: 50%"
                 >
-                <p>Figure15. Temperature curve of constant temperature process</p>
+                <p style="font-size: .8rem;">Figure15. Temperature curve of constant temperature process</p>
             </div>
+
+            <br>
 
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/f/fb/T--BIT--HardWare_19.png"
                      style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                     width: 50%"
+                     width: 70%"
                 >
-                <p>Figure16. Temperature curve during the heating process</p>
+                <p style="font-size: .8rem;">Figure16. Temperature curve during the heating process</p>
             </div>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -1027,10 +1029,7 @@
             <br>
             <br>
 
-            <h3>6 Mobile phone interaction module</h3>
-            <br>
-            <br>
-            <br>
+            <h3 style="color: rgb(237, 88, 58)">3.6 Mobile phone interaction module</h3>
             <br>
             <br>
 
@@ -1042,9 +1041,6 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
             <p>
                 Through the establishment of the small program, we have completed the 
@@ -1053,9 +1049,6 @@
                 and outputting the predicted concentration.
             </p>
 
-            <br>
-            <br>
-            <br>
             <br>
             <br>
 
@@ -1072,9 +1065,6 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
             <p>
                 Software interaction process: the mobile phone shoots multiple fluorescent 
@@ -1087,11 +1077,8 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
-            <p>
+            <p style="text-indent: 2rem;">
                 1. Enter the concentration value, click Upload Image to upload the picture, 
                 click Color Feature1 to extract the color features, the user can upload at 
                 least 2 samples up to 5 samples; 
@@ -1099,20 +1086,18 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
-            <p>
+            <p style="text-indent: 2rem;">
                 2. Upload a new image to extract new features, use the least square method 
                 to fit and output the predicted concentration. 
             </p>
+            <br>
             <div align="center">
                 <img src="https://2020.igem.org/wiki/images/d/d5/T--BIT--HardWare_20.png"
                      style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 50%"
+                 width: 70%"
                 >
-                <p>Figure17.  WeChat mini program interface</p>
+                <p style="font-size: .8rem;">Figure17.  WeChat mini program interface</p>
             </div>
 
             <a name="3.7"></a>
@@ -1122,15 +1107,12 @@
             <br>
             <br>
 
-            <h3>7 Innovation</h3>
+            <h3 style="color: rgb(237, 88, 58)">3.7 Innovation</h3>
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
-            <p>
+            <p style="text-indent: 2rem;">
                1. It innovatively combines the biological detection process with the design 
                of the hardware chip, skillfully USES the centrifugal driving force constructed 
                by the chip and the internal liquid path evaluation model to complete the 
@@ -1141,11 +1123,8 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
-            <p>
+            <p style="text-indent: 2rem;">
                 2. The microfluidic chip adopts the fingertip gyro type liquid path driving 
                 mode, which reduces the dependence on large analytical instruments and improves 
                 the universality. 
@@ -1153,163 +1132,77 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
-            <p>
+            <p style="text-indent: 2rem;">
                 3. The combination of WeChat small programs can greatly improve work efficiency, 
                 and the realization of software interaction can be more convenient and fast. 
             </p>
 
             <br>
             <br>
-            <br>
-            <br>
-            <br>
 
-            <h3>References</h3>
-            <p>
+            <h3 style="color: rgb(237, 88, 58)">4. References</h3>
+            <br>
+            <br>
+            <p style="text-indent: 2rem;">
                 [1]Bhamla, M. S. et al. Hand-powered ultralow-cost paper centrifuge. 
                 Nat. Biomed. Eng. 1, 0009 (2017).  
             </p>
-            <p>
+            <br>
+            <p style="text-indent: 2rem;">
                 [2]Michael, I. , Kim, D. , Gulenko, O. , Kumar, S. , & Cho, Y. K. . 
                 (2020). A fidget spinner for the point-of-care diagnosis of urinary 
                 tract infection. Nature Biomedical Engineering, 4(6), 1-10. 
             </p>
-            <p>
+            <br>
+            <p style="text-indent: 2rem;">
                 [3]Ren Kangning,Zhou Jianhua,Wu Hongkai. Materials for microfluidic 
                 chip fabrication.[J]. Accounts of chemical research,2013,46(11). 
             </p>
-            <p>
+            <br>
+            <p style="text-indent: 2rem;">
                 [4] Yang Yongliang. Microfluidic chip and detection device for CD4 cell 
                 counting  
             </p>
-            <p>
+            <br>
+            <p style="text-indent: 2rem;">
                 [5] Man Yan. Study on highly sensitive and rapid detection of protein based 
                 on microfluidic chip [D]. Beijing Institute of Technology, 2015. 
             </p>
-            <p>
+            <br>
+            <p style="text-indent: 2rem;">
                 [6]. Beijing University of Chemical Technology, 2016. 
             </p>
-            <p>
+            <br>
+            <p style="text-indent: 2rem;">
                 [7] Zhang Ying, Feng Hai, Wu Qiuping, Tan Zeng, he Jiabei. 
                 Research progress of colloidal gold immunochromatography [J]. 
                 Advances in Modern Biomedicine, 2015 J 15 (12): 2349-2351.  
             </p>
-            <div align="center">
-                <img src="https://2020.igem.org/wiki/images/9/9d/T--BIT--silver_10.jpg"
-                     style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 50%"
-                >
+
+            <br>
+            <br>
+            <div id="foot-box" style="background-color: rgb(34, 34, 34); text-align: center; color: rgb(255, 255, 255);">
+                <br>
+                    Created By Beijing Institute of Technology
+                <br>
+                <br>
             </div>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <p>
-               
-            </p>
-            <div align="center">
-                <img src="https://2020.igem.org/wiki/images/c/ca/T--BIT--silver_11.png"
-                     style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 25%"
-                >
-            </div>
-
-            <a name="3"></a>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <h2 style="color:rgb(237, 88, 58)">Education</h2>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <p>
-                
-            </p>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <p>
-                
-            </p>
-            <div align="center">
-                <img src="https://2020.igem.org/wiki/images/b/bc/T--BIT--silver_12.png"
-                     style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 50%"
-                >
-            </div>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <p>
-               
-            </p>
-            <div align="center">
-                <img src="https://2020.igem.org/wiki/images/3/3f/T--BIT--silver_13.jpg"
-                     style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 50%"
-                >
-            </div>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <p>
-               
-            </p>
-            <div align="center">
-                <img src="https://2020.igem.org/wiki/images/0/0a/T--BIT--silver_14.jpg"
-                     style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
-                 width: 50%"
-                >
-            </div>
-        </div>
-
-        <div id="foot-box" style="background-color: rgb(147, 86, 85); text-align: center; color: rgb(255, 255, 255);">
-            <br>
-           
-            <br>
-            <br>
-        </div>
     </article>
+
 </div>
 
 
 <style>
     body {
-        background: rgb(255, 255, 255);
-        background-size: cover;
+        background:url(https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/image-20201023192529465.png);
     }
     * {margin:0; padding: 0;}
     body .inner {
         padding: 20px;
     }
     body .inner h1 {
-        font-family: monospace, sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 3rem;
     }
     body .inner .router a{
@@ -1326,7 +1219,6 @@
     nav {
         width: 25%;
         float: left;
-        padding-top: 5%;
     }
     nav .inner {
         width: 18%;
@@ -1368,7 +1260,7 @@
         box-shadow:  0px 0px 20px rgba(0,0,0,.5);
     }
     article .inner {
-        padding: 20px;
+        padding: 40px;
     }
 
 
@@ -1377,12 +1269,12 @@
         line-height: 3rem;
     }
     #main-content p{
-        font-size: 1.2rem;
+        font-size: .9rem;
         line-height: 2rem;
-        font-family: monospace, sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
     #main-content h2 {
-        font-family: monospace, sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
 </style>
 
