@@ -1,0 +1,517 @@
+<html>
+<head>
+
+<script>
+        function changeColortoGreen(e) {
+            e.style.backgroundColor = 'rgb(31, 160, 174)';
+        }
+    
+        function changeColortoBlack(e) {
+            e.style.backgroundColor = 'rgb(51, 51, 51)';
+        }
+</script>
+
+<!--这是返回顶部控件的css,不要修改，单独抽离后会失效-->
+<style>
+    .cd-top {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 40px;
+        right: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        /* image replacement properties */
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        background: rgba(232, 98, 86, 0.8) url(https://2020.igem.org/wiki/images/1/12/T--BIT--cd-top-arrow.svg) no-repeat center 50%;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+        -moz-transition: opacity .3s 0s, visibility 0s .3s;
+        transition: opacity .3s 0s, visibility 0s .3s;
+    }
+    .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+        -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+        -moz-transition: opacity .3s 0s, visibility 0s 0s;
+        transition: opacity .3s 0s, visibility 0s 0s;
+    }
+    .cd-top.cd-is-visible {
+        /* the button becomes visible */
+        visibility: visible;
+        opacity: 1;
+    }
+    .cd-top.cd-fade-out {
+        /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+        opacity: .5;
+    }
+    .no-touch .cd-top:hover {
+        background-color: #e86256;
+        opacity: 1;
+    }
+    @media only screen and (min-width: 768px) {
+    .cd-top {
+        right: 20px;
+        bottom: 20px;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+</style>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:BIT/css/multi_drop_menu&action=raw&ctype=text/css" />
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:BIT/css/file-explore.css&action=raw&ctype=text/css" />
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:BIT/css/card.css&action=raw&ctype=text/css" />
+
+<style>
+body {
+	background:url(https://2020.igem.org/wiki/images/c/ce/T--BIT--bg3.png);
+}
+#bodyContent a[href ^="https://"], .link-https {
+	background: none !important;	
+}
+.a-p {
+	font-size: .9.9 !important;
+	font-family: 'Poppins', sans-serif!important;
+}
+</style>
+</head>
+
+
+<body>
+
+<div id="main-content" style="width: 100%;">
+	<div style="float: left; padding: 10px; margin-top: 30px; width: 25%;" >
+			<div class="htmleaf-container">
+				<div class="container">
+				<ul class="file-tree">
+					<li><a href="#">Home</a>
+						<ul>
+							<li><a href="https://2020.igem.org/Team:BIT">Home</a></li>	
+						</ul>	
+					</li> 
+		
+					<li><a href="#">Project</a>
+						<ul>
+							<li><a href="https://2020.igem.org/Team:BIT/Description">Description</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Bio">Bio</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Hardware">Hardware</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Model">Model</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Engineering">Engineering</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Implementation">Implementation</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Proof_Of_Concept">Proof Of Concept</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Contribution">Contribution</a> </li>
+						</ul>
+					</li>
+		
+					<li><a href="#">Practice</a>
+						<ul>
+							<li><a href="https://2020.igem.org/Team:BIT/Human_Practices">Overview</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Silver">Silver</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Integrated_Practice">Integrated Practice</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Education">Education</a> </li>
+						</ul>
+					</li>
+		
+					<li><a href="#">Judge</a>
+						<ul>
+							<li><a href="https://2020.igem.org/Team:BIT/Medal">Medal</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Safety">Safety</a> </li>
+						</ul>
+					</li>
+		
+					<li><a href="#">Team</a>
+						<ul>
+							<li><a href="https://2020.igem.org/Team:BIT/Members">Members</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Collaborations">Collaborations</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Partnership">Partnership</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Notebook">Notebook</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Attributions">Attributions</a> </li>
+							<li><a href="https://2020.igem.org/Team:BIT/Excellence_in_Another_Area">Excellence in Another Area</a> </li>
+						</ul>
+					</li>
+		
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+
+	<div class="htmleaf-container" style="float:left; width: 55%;" >
+		<div class="tabs" style="left: 40%; width: 70%;">
+			<input type="radio" id="tab1" name="tab-control" checked>
+			<input type="radio" id="tab2" name="tab-control">
+			<input type="radio" id="tab3" name="tab-control">  
+			<input type="radio" id="tab4" name="tab-control">
+			<ul>
+				<li>
+					<label for="tab1" role="button">
+						<span>BIT-China</span>
+					</label>
+				</li>
+				<li>
+					<label for="tab2" role="button">
+						<span>SCUT-China</span>					
+					</label>
+				</li>
+				<li>
+					<label for="tab3" role="button">
+						<span>SCU-China</span>
+					</label>
+				</li> 
+				<li>
+					<label for="tab4" role="button">
+						<span>empty_box</span>
+					</label>
+				</li>   
+			</ul>
+				
+			<div class="slider"><div class="indicator"></div></div>
+				<div class="content">
+					<section>
+						<div align="center">
+							<img src="https://2020.igem.org/wiki/images/0/0c/T--BIT--Collarations_01.jpg"
+								style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+							width: 25%"
+							>
+						</div>
+						<br>
+						<br>
+						<p class="a-p">
+							Due to the impact of the COVID-19, teams all over the world have encountered many problems.
+							In order to ensure the smooth progress of this year's project, every team is doing a lot of 
+							excellent work in their own way. iGEM emphasizes the win-win cooperation between the teams, 
+							especially in this year's special circumstances, the teams should strengthen cooperation to
+							overcome difficulties together.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Against this background, team BIT chose to cooperate in-depth with the BIT-China team from the
+							same university to work together more substantively and better to help the two teams.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							The BIT team is very interested in the HP work done by team BIT-China in 19 years.
+							Because this year iGEM launched the "Two phase" competition mode. Although a team
+							can have different composition in the two years of the "Two phase", it will be even
+							more important if the team members who participated in the project in the first year
+							can continue to participate in the second year. It is possible to make a better 
+							project. Therefore, the team's heritage has become very important. Team BIT-China
+							interviewed a number of iGEM teams in 2019, designed a series of questions on "team heritage"
+							and received a lot of answers. In the survey conducted by BIT-China last year, it was found
+							that many iGEMers have gained a lot from iGEM, and many people also expressed their willingness
+							to participate in the future iGEM. But in fact, few iGEMers really stayed in the team and participated
+							in the next year's project. In the results, many iGEMers mentioned that their team did not have a 
+							corresponding incentive mechanism, and there was no motivation to keep them. This question is of 
+							great interest to team BIT. Therefore, tean BIT got in touch with team BIT-China this year, hoping
+							to cooperate in this regard.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Therefore, we want to understand why iGEMers are willing to participate in iGEM.
+						</p>
+						<br>
+						<br>
+						<div align="center">
+							<img src="https://2020.igem.org/wiki/images/a/ab/T--BIT--Collarations_02.png"
+								style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+							width: 75%"
+							>
+						</div>
+						<br>
+						<br>
+						<p class="a-p">
+							According to the results of the questionnaire, most iGEMers believe that iGEM is a training for
+							future research work and an excellent opportunity to communicate with more teams. At the same time,
+							most iGEMers don't think it is important to get an award through iGEM for higher education.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Similarly, when asking most iGEMers what they think is the most valuable content they have obtained 
+							in iGEM, most iGEMers also think so.Most iGEMers believe that participating in iGEM to train their 
+							scientific research capabilities is vital to them.
+						</p class="a-p">
+						<br>
+						<br>
+						<div align="center">
+							<img src="https://2020.igem.org/wiki/images/b/b6/T--BIT--Collarations_03.png"
+								style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+							width: 75%"
+							>
+						</div>
+						<br>
+						<br>
+						<p class="a-p">
+							Through this questionnaire survey, combined with the results of the BIT_China team in 2019, 
+							we believe that if we can establish a "course to iGEM" and "student to teacher" system, it may
+							be possible to increase the team members to participate in another year The passion of iGEM.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Through such research results, team BIT and team BIT-China reached a consensus, hoping to conduct
+							in-depth cooperation in personnel training, help the two teams work better this year, and lay the
+							foundation for the second year of work. For this purpose, team BIT and team BIT-China have carried
+							out a series of related cooperation work at different stages of the project.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							In the early stage of the project, how to make the new team members better understand iGEM so as 
+							to better promote the project, BIT and BIT-China jointly organized a series of related courses to
+							train the team members together.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Therefore, during our online process, we prioritize the learning needs of our team members and the 
+							students' course expertise. The BIT team combines online learning to be members of the team, students
+							from the college, and students from the entire school. A series of courses combined with professional
+							courses have been prepared to help students learn more professional knowledge from their own knowledge
+							background, and also be able to understand iGEM and synthetic biology in the process. Similarly, 
+							these courses were taught by iGEMers from the past team BIT. At the same time, we also held trial 
+							lectures in the team members after class to help the team members better understand the content of
+							the course, and at the same time exercise their ability to explain relevant content for new team 
+							members in the future. Similarly, we shared these contents on the bilibili platform to help more
+							students learn and understand related aspects.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							In the middle of the project, both teams participated in CCIC. Before the game, BIT and BIT-China 
+							conducted project exchanges to prepare for this meeting. Team BIT put forward some suggestions for 
+							the poster of BIT-China from the perspective of the artist, and helped the BIT-China team to better 
+							modify its poster, and finally won the best poster award in CCIC.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">	
+							After CCIC, BIT received suggestions from the judge and many other teams. These suggestions were 
+							basically focused on the hardware part. Many people think that there is a problem with the related 
+							manual centrifugal device. Team BIT-China helps BIT to troubleshoot related issues. BIT adopted the
+							relevant suggestions provided by BIT-China and finally decided to use the fingertip top as the new
+							manual centrifugal device.						
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							And at the end of the project, every team faced the challenge of WIKI freeze. In previous years, 
+							every WIKI of team BIT was made by the team members themselves or by the help of the teammates’ 
+							classmates and friends. These tasks not only caused great pressure on the team members, but in fact,
+							we can do better. Therefore, we communicated with the BIT-China team on the production of WIKI. 
+							Team BIT-China suggested that we can try to cooperate with students from other professional backgrounds,
+							looking for more professional students to help us achieve more results we want to achieve, and team 
+							BIT-China recommended several people from the same project team. These students have undertaken the
+							technical details of the 2020 WIKI of the BIT team, and their work is excellent!
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Not only in 2020, the BIT team and the BIT-China team will also cooperate more with the laboratory in the 
+							future, not only for the production of WIKI, but also a series of lectures to help more people.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Not only that, the BIT team and the BIT-China team are also working together to attract students
+							from different backgrounds to become iGEMers and to reserve talents for the future. In order to 
+							help more freshmen understand the university, understand the research work, and understand the 
+							iGEM, BIT and BIT-China jointly held a coffee metting. Because of the impact of the COVID-19, 
+							it is irresponsible to hold large-scale lectures, so the two teams chose Use the form of holding 
+							several coffee metting to achieve the effect of popular science publicity.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Team BIT and team BIT-China started in-depth cooperation in talent training this year. 
+							The two teams will sum up their experience this year and cultivate more professional 
+							iGEMers in the iGEM process next year, and make better results!
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							BIT-China`s wiki:
+						</p>
+						<p class="a-p" style="text-indent: 2rem;">
+							<a href="https://2020.igem.org/Team:BIT-China/Collaborations">https://2020.igem.org/Team:BIT-China/Collaborations</a>
+						</p>
+					</section>
+
+
+
+					<section>
+						<div align="center">
+							<img src="https://2020.igem.org/wiki/images/d/d3/T--BIT--Collarations_04.jpg"
+									style="box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+									width: 60%;
+									padding: 10px;"
+							>
+						</div>
+						<br>
+						<br>
+						<p class="a-p">
+							In past competitions, many teams chose to use offline lectures for popular science publicity activities. 
+							However, under the influence of the COVID-19, many teams have to choose more to shift their focus to online 
+							science popularization. Although in previous years, various teams have carried out a lot of online science 
+							promotion work, but many teams have not summarized the relevant experience of national online science 
+							popularization, including team BIT and team SCUT-China. Therefore, our two teams have reached a cooperation 
+							and conducted a summary of online science popularization experience and future prospects in different aspects, 
+							and we hope that our experience can help each team in the future.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Download the report of team BIT survey report：Annex Ⅱ
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Team SCUT-China`s work：
+						</p>
+						<p class="a-p" style="text-indent: 2rem;">
+							<a href="https://2020.igem.org/Team:SCUT_China/Education">https://2020.igem.org/Team:SCUT_China/Education</a>
+						</p>
+						<p class="a-p">
+							Team SCUT-China`s wiki: 
+						</p>
+						<p class="a-p" style="text-indent: 2rem;">
+							<a href="https://2020.igem.org/Team:SCUT_China/Collaborations">https://2020.igem.org/Team:SCUT_China/Collaborations</a>
+						</p>
+					</section>
+
+					<section>
+						<p class="a-p">
+							SCU-China`s topic this year is related to the fermentation of pasta, so they plan to show the different 
+							fermentation processes of specialty pasta in China in the HP section. They hope to ask my team for help 
+							and provide them with some real photos or videos of local pasta. Due to the impact of the COVID-19, team 
+							BIT members completed their courses in the second half of the semester through online teaching in their 
+							cities. At the same time, team BIT`s members come from various regions of China. Therefore, team BIT called
+							on members to collect photos in their hometowns and provided them to SCU-China to help them enrich their 
+							human practice.
+						</p>
+						<br>
+						<br>
+						<p class="a-p">
+							Team SCU-China`s wiki: 
+						</p>
+						<p class="a-p" style="text-indent: 2rem;">
+							<a href="https://2020.igem.org/Team:SCU-China/Collaboration">https://2020.igem.org/Team:SCU-China/Collaboration</a>
+						</p>
+					</section>
+
+					<section>
+						
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<nav style="float: left; width: 15%; padding-top: 10%;">
+		<div class="inner" style=" background-color: rgb(255, 255, 255); padding: 10px; padding-top: 5px; position: fixed;" >
+			<div class="contact" style=" background-color: rgb(0, 0, 0); padding: 10px;">
+				<p style="color: rgb(255, 255, 255);">CONNECT WITH US</p>
+				<hr>
+				<br>
+		
+				<!-- <img src="https://2020.igem.org/wiki/images/9/97/T--BIT--youxiang.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+				<br> -->
+				<span style="color: rgb(255, 255, 255);">email: igem_bit@outlook.com </span><br>
+		
+				<br>
+		
+		
+				<a href="https://weibo.com/u/5615996310" style="text-decoration: none;">
+					<img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/9/90/T--BIT--weibo.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+				</a>
+		
+		
+		
+				<a class="a-img" href="https://mobile.twitter.com/iGEM_BIT" style="text-decoration: none">
+					<img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/2/21/T--BIT--ttww.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+				</a>
+		
+		
+		
+				<a href="https://www.instagram.com/igem_bit" style="text-decoration: none">
+					<img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/1/17/T--BIT--instagram.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+				</a>
+		
+		
+				<a href="https://github.com/a-layfolk/igem" style="text-decoration: none">
+					<img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/1/10/T--BIT--git.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+				</a>
+		
+		
+		
+				<br>
+		
+			</div>
+		</div>
+	</nav>
+
+<a href="#0" class="cd-top">Back Top</a>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:BIT/js/jquery-3.5.1.min.js&action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:BIT/js/file-explore.js&action=raw&ctype=text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".file-tree").filetree();
+});
+</script>
+
+<!--这是返回顶部的js代码，单独抽离之后会失效-->
+<script>
+    jQuery(document).ready(function($){
+        var offset = 300,
+        offset_opacity = 1200,
+        scroll_top_duration = 700,
+        $back_to_top = $('.cd-top');
+    
+        
+        $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                $back_to_top.addClass('cd-fade-out');
+            }
+        });
+    
+        
+        $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: 0 ,
+                 }, scroll_top_duration
+            );
+        });
+    });
+</script>
+
+</body>
+</html>
