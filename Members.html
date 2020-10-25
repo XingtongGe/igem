@@ -6,12 +6,23 @@
 
 	<style>
 		body {
-			background: url(https://2020.igem.org/wiki/images/e/ea/T--BIT--bg4.png);
+			background: url(https://2020.igem.org/wiki/images/3/31/T--BIT--bg6.png);
 		}
 		#bodyContent a[href ^="https://"], .link-https {
 			background: none !important;	
 		}
 	</style>
+
+<script>
+	function changeColortoGreen(e) {
+		e.style.backgroundColor = 'rgb(31, 160, 174)';
+	}
+
+	function changeColortoBlack(e) {
+		e.style.backgroundColor = 'rgb(51, 51, 51)';
+	}
+</script>
+
 </head>
 
 <body>
@@ -74,11 +85,13 @@
 		</div>
 
 		<div style="width: 50%; float: left;">
-			<article class="htmleaf-container">
-
-				<header class="htmleaf-header"></header>
-
-				<div class="card" style="height: 40rem; max-width: 80rem; width: 45rem; margin-top: 2%;">
+			<article class="htmleaf-container"">
+				<div class="card" 
+				style="height: 40rem;
+				 max-width: 80rem; 
+				 width: 100%; 
+				 margin-top: 2%;
+				 background: rgb(220, 220, 220);">
 					<div class="products">
 
 
@@ -454,6 +467,51 @@
 				</div>
 			</article>
 		</div>	
+
+
+
+		<nav style="float: left; width: 15%; padding-top: 10%;">
+			<div class="inner" style="padding: 10px; padding-top: 5px; position: fixed; right: 2%" >
+				<div class="contact" style=" background-color: rgb(0, 0, 0); padding: 10px;">
+					<p style="color: rgb(255, 255, 255);">CONNECT WITH US</p>
+					<hr>
+					<br>
+			
+					<!-- <img src="https://2020.igem.org/wiki/images/9/97/T--BIT--youxiang.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+					<br> -->
+					<span style="color: rgb(255, 255, 255);">email: igem_bit@outlook.com </span><br>
+			
+					<br>
+			
+			
+					<a href="https://weibo.com/u/5615996310" style="text-decoration: none;">
+						<img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/9/90/T--BIT--weibo.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+					</a>
+			
+			
+			
+					<a class="a-img" href="https://mobile.twitter.com/iGEM_BIT" style="text-decoration: none">
+						<img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/2/21/T--BIT--ttww.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+					</a>
+			
+			
+			
+					<a href="https://www.instagram.com/igem_bit" style="text-decoration: none">
+						<img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/1/17/T--BIT--instagram.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+					</a>
+			
+			
+					<a href="https://github.com/a-layfolk/igem" style="text-decoration: none">
+						<img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/1/10/T--BIT--git.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+					</a>
+			
+			
+			
+					<br>
+			
+				</div>
+			</div>
+		</nav>
 	</div>
 
 	

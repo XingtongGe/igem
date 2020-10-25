@@ -1,0 +1,875 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:BIT/css/multi_drop_menu&action=raw&ctype=text/css" />
+
+<script>
+    function changeColortoGreen(e) {
+        e.style.backgroundColor = 'rgb(31, 160, 174)';
+    }
+
+    function changeColortoBlack(e) {
+        e.style.backgroundColor = 'rgb(51, 51, 51)';
+    }
+</script>
+
+<!--这是返回顶部控件的css,不要修改，单独抽离后会失效-->
+<style>
+    .cd-top {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 40px;
+        right: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        /* image replacement properties */
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        background: rgba(232, 98, 86, 0.8) url(https://2020.igem.org/wiki/images/1/12/T--BIT--cd-top-arrow.svg) no-repeat center 50%;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+        -moz-transition: opacity .3s 0s, visibility 0s .3s;
+        transition: opacity .3s 0s, visibility 0s .3s;
+    }
+    .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+        -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+        -moz-transition: opacity .3s 0s, visibility 0s 0s;
+        transition: opacity .3s 0s, visibility 0s 0s;
+    }
+    .cd-top.cd-is-visible {
+        /* the button becomes visible */
+        visibility: visible;
+        opacity: 1;
+    }
+    .cd-top.cd-fade-out {
+        /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+        opacity: .5;
+    }
+    .no-touch .cd-top:hover {
+        background-color: #e86256;
+        opacity: 1;
+    }
+    @media only screen and (min-width: 768px) {
+    .cd-top {
+        right: 20px;
+        bottom: 20px;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+</style>
+
+<body>
+<div id="main-content">
+    <header>
+        <div style="background: rgb(34, 34, 34); position: fixed; width: 81%; box-shadow: 0 0 10px rgba(0,0, 0, .5)">
+            <br>
+            <div id="menu_box" style="float: right">
+                <div id="multi_drop_menu">
+                    <!--一级菜单开始-->
+                    <ul>
+                        <li><a href="">Home</a>
+                            <ul>
+                                <li><a href="https://2020.igem.org/Team:BIT">Home</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Project</a>
+                            <!--二级菜单开始-->
+                            <ul>
+                                <li><a href="https://2020.igem.org/Team:BIT/Description">Desciption</a>
+                                <li><a href="https://2020.igem.org/Team:BIT/Bio">Bio</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Hardware">Hardware</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Model">Model</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Engineering">Engineering</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Implementation">Implementation</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Proof_Of_Concept">Proof Of Concept &nbsp;</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Contribution">Contribution</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Practice</a>
+                            <!--二级菜单开始-->
+                            <ul>
+                                <li><a href="https://2020.igem.org/Team:BIT/Human_Practices">Overview</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Silver">Silver</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Integrated_Practice">Integrated Practice &nbsp;</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Education">Education</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Judge</a>
+                            <!--二级菜单开始-->
+                            <ul>
+                                <li><a href="https://2020.igem.org/Team:BIT/Medal">Medal</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Safety">Safety</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Team</a>
+                            <!--二级菜单开始-->
+                            <ul>
+                                <li><a href="https://2020.igem.org/Team:BIT/Members">Members</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Collaborations">Collaborations</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Partnership">Partnership</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Notebook">Notebook</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Attributions">Attributions</a></li>
+                                <li><a href="https://2020.igem.org/Team:BIT/Excellence_in_Another_Area">Excellence in Another Area &nbsp;</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <nav>
+        <!--这里的&nbsp是占位用的，修改后整个页面会乱掉-->
+        <div class="hidden">&nbsp;</div>
+
+        <div class="inner">
+            <div class="contact">
+                <p style="color: rgb(255, 255, 255);">CONNECT WITH US</p>
+                <hr>
+                <br>
+
+                <!-- <img src="https://2020.igem.org/wiki/images/9/97/T--BIT--youxiang.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+                <br> -->
+                <span style="color: rgb(255, 255, 255);">email: igem_bit@outlook.com </span><br>
+
+                <br>
+
+
+                <a href="https://weibo.com/u/5615996310" style="text-decoration: none;">
+                    <img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/9/90/T--BIT--weibo.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+                </a>
+
+
+
+                <a class="a-img" href="https://mobile.twitter.com/iGEM_BIT" style="text-decoration: none">
+                    <img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/2/21/T--BIT--ttww.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+                </a>
+
+
+
+                <a href="https://www.instagram.com/igem_bit" style="text-decoration: none">
+                    <img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/1/17/T--BIT--instagram.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+                </a>
+
+
+                <a href="https://github.com/a-layfolk/igem" style="text-decoration: none">
+                    <img onmouseover="changeColortoGreen(this)" onmouseout="changeColortoBlack(this)" src="https://2020.igem.org/wiki/images/1/10/T--BIT--git.svg" style="background-color: rgb(51, 51, 51); width: 3rem;">
+                </a>
+
+
+
+                <br>
+
+            </div>
+
+            <div class="nav-bar">
+                <p style="color: rgb(255, 255, 255)">BOOKMARK</p>
+                <hr>
+                <br>
+                <ul>
+                    <!-- 无序列表 -->
+                    <li><a href="#1" style="color: rgb(255, 255, 255)">1. Problems&Solutions in Biology</a></li>
+                    <br>
+                    <li><a href="#2" style="color: rgb(255, 255, 255)">2. Problems&Solutions in Hardware</a></li>
+                    <br>
+                    <li><a href="#3" style="color: rgb(255, 255, 255)">3. Microfluidic chip and related content production protocol</a></li>
+                    <br>
+                    <li><a href="#4" style="color: rgb(255, 255, 255)">4. Research of the current universal platform</a></li>
+                </ul>
+                <br>
+            </div>
+        </div>
+    </nav>
+
+    <article>
+        <a name="1"></a>
+        <div
+            style="background: url(https://2020.igem.org/wiki/images/3/31/T--BIT--autumnA.jpg) no-repeat; height: 400px; background-size: 100%;">
+        </div>
+        <br>
+        <div class="inner">
+            <div>
+                <h1 style="color:white ; margin-top: -20%">Contribution</h1>
+            </div>
+
+            <a name="1"></a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2 style="color: rgb(237, 88, 58)">
+                 ① Problems and solutions in the process of our project design (Biology)
+            </h2>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="PS">
+                <h3>Question1:</h3>
+                <p>
+                    In the initial stage of the project, we plan to use RPA-Isothermal amplification
+                    technology to amplify the multi nucleic acid signals obtained in the sample
+                    pre-processing stage for subsequent detection, including the extraction and
+                    purification of 2019-nCoV nucleic acid signal (nucleic acid detection) and the
+                    complementary chain signal (protein detection) of 2019-nCoV characteristic protein 
+                    through aptamer replacement. However, in the actual experiment, we found that the 
+                    length of complementary chain obtained by aptamer replacement in protein detection 
+                    is very short, far less than the length of primer required by RPA, which shows that 
+                    our project design has flaws.
+                </p>
+                <h3>Solution:</h3>
+                <p>
+                    After investigation, we decided to replace RPA technology with HCR technology and RCA 
+                    technology. On the basis of retaining the advantages of RPA technology, such as isothermal, 
+                    rapid, efficient and convenient, the two technologies can greatly expand long and short chain 
+                    nucleic acid fragments in a short period of time, which is very consistent with the needs of 
+                    our project. Therefore, we initially decided to use RCA technology to amplify complementary 
+                    chain in protein detection and HCR technology to amplify nucleic acid signal in nucleic acid detection.
+                </p>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="PS">
+                <h3>Question2:</h3>
+                <p>
+                    In the initial project, one of the important reasons for us to use RPA technology is to use RPA 
+                    to amplify the nucleic acid signal in the Sherlock technology used in the nucleic acid signal 
+                    detection and energy exchange part. However, due to the change of nucleic acid amplification 
+                    method in the first problem, our Sherlock technology has been greatly affected, and we have no 
+                    previous experimental accumulation of this technology, so the experimental operation is also 
+                    very difficult.
+                </p>
+                <h3>Solution:</h3>
+                <p>
+                    After careful consideration, in order to cope with the change of nucleic acid amplification mode 
+                    in question 1, we decided to delete the Sherlock technology of nucleic acid signal detection and 
+                    energy exchange, and directly use the lateral chromatography strip to detect our amplification 
+                    results. In this way, we can avoid the huge risk that Sherlock technology may bring, and also can 
+                    reduce the experimental cost and unnecessary waste of human and financial resources.
+                </p>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="PS">
+                <h3>Question3:</h3>
+                <p>
+                    In the middle and later stage of the project implementation, we found that the nucleic 
+                    acid detection pathway in the project has been well studied in the world, so there is 
+                    no outstanding innovation point, which cannot reflect the progress of the project.
+                </p>
+                <h3>Solution:</h3>
+                <p>
+                    Since there are no outstanding innovations in the nucleic acid detection pathway, we 
+                    think it is unnecessary to repeat the mature experiments. At the same time, in order 
+                    to save time and cost, we finally decided to delete the nucleic acid detection pathway 
+                    to highlight the protein detection pathway in the project. Different from the nucleic 
+                    acid detection pathway, aptamer is used to convert the non amplified protein signal 
+                    into the amplified nucleic acid signal, which greatly improves the accuracy of detection 
+                    and breaks the traditional protein detection method based on antigen antibody binding. 
+                    Finally, we decided to use HCR and RCA technology to amplify the protein detection pathway, 
+                    and use two kinds of lateral chromatography strips (colloidal gold, fluorescent microspheres) 
+                    to detect our amplification results. We hope to compare and analyze the results through 2 * 2 
+                    nucleic acid amplification detection mode to obtain more accurate detection results.
+                </p>
+            </div>
+
+            <a name="2"></a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2 style="color: rgb(237, 88, 58)">
+                ② Problems and solutions during project design (hardware)
+            </h2>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="PS">
+                <h3>Question1:</h3>
+                <p>
+                    In the early stage of our project, the design of microfluidic chip tends to use the pulling 
+                    whistle driven centrifugal chip based on the "pulling whistle principle". The spring rope 
+                    is pulled by external force to switch between the "winding" and "unfolding" states, and the 
+                    centrifugal disc chip is pulled to produce certain rotation speed and centrifugal force. 
+                    However, after our later model construction and experimental verification, the centrifugal 
+                    chip driven by pulling whistle has a considerable defect, that is, it cannot guarantee the 
+                    horizontal balance of the chip during centrifugation, and it is very unstable in the process 
+                    of rotation, which will lead to tremor and leakage.
+                </p>
+                <h3>Solution:</h3>
+                <p>
+                    We improved the original design of pulling whistle to a microfluidic chip driven by fidget 
+                    spinner. The centrifugal force generated by the rotation of fidget spinner can also drive 
+                    the flow of liquid well. Because of the stable orbit of the shaft, it can guarantee our 
+                    stability in the horizontal direction.
+                </p>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="PS">
+                <h3>Question2:</h3>
+                <p>
+                    According to our original design, all our biological treatment parts will be integrated 
+                    in the chamber of the microfluidic chip. However, considering the simplification of the 
+                    microfluidic chip structure and meeting the detection needs of POCT, we should try to 
+                    avoid using manual or motor-driven micro valves, but this means that the reactions in 
+                    the microfluidic chips may interfere with each other during multiple driving.
+                </p>
+                <h3>Solution:</h3>
+                <p>
+                    Because we cannot solve the problem of the multiple driving of microfluidic chip in a 
+                    short time, we plan to do split cell and convert protein signal into nucleic acid signal 
+                    these two steps before the injection of microfluidic chip.
+                </p>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="PS">
+                <h3>Question3:</h3>
+                <p>
+                    The paramagnetic particle method mainly includes four steps: pyrolysis, combination, 
+                    washing and elution, and the conditions of each step are stringent. After literature 
+                    research, we found that the operation steps of paramagnetic particle method in microfluidic 
+                    chip is complex, and it is difficult to realize in the microfluidic chip in this project.
+                </p>
+                <h3>Solution:</h3>
+                <p>
+                    At present, the efficiency of nucleic acid extraction by paramagnetic particle method 
+                    in chip is not high. At the same time, through the experiment in microfluidic chip, we 
+                    find that the amplified signal without paramagnetic particle method can meet the needs 
+                    of detection, so the step of nucleic acid signal extraction can be deleted.
+                </p>
+                <p>
+                    Based on the above research, this project changes to conduct the sample pre-processing 
+                    process for protein signal such as aptamer replacement before sample’s injection after 
+                    cell structure destruction. In the pretreatment process of reagent consumables, we only 
+                    embed the strip in the centrifuge chip, and other reaction steps are planned to be completed 
+                    before injection. In the final delivery to the user, the user needs to carry out the sample 
+                    pre-processing process.
+                </p>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="PS">
+                <h3>Question4:</h3>
+                <p>
+                    In our design, the power supply is directly from the mobile phones to the external devices. 
+                    However, after our research and analysis, it is impossible for mobile phones to directly power 
+                    external devices or units. For example, the micro USB interface is common in mobile phones, 
+                    however, according to international standards, it is impossible to supply power from the mobile 
+                    phone to other devices. If the power supply to the external equipment is strengthened through 
+                    the earphone jack of mobile phone, only small current and small voltage can be output. At present
+                    , 3.5mm headphone interface has been gradually replaced. To sum up, it is not easy to use the mobile 
+                    phone to charge the device in reverse.
+                </p>
+                <h3>Solution:</h3>
+                <p>
+                    In order to solve the above problems, we design two schemes: the first scheme is to use the 
+                    external power bank to supply power, which is not only easy to get, but also easy to carry and 
+                    use. The design of the external device is also very simple, only need a USB interface to connect 
+                    the charging device. Another design method is to select a battery that can power the device and 
+                    design it on the same device as other modules. The battery can choose 18650 lithium battery which 
+                    is commonly used in the market.
+                </p>
+            </div>
+
+            <a name="3"></a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2 style="color:rgb(237, 88, 58)">
+                ③ Microfluidic chip and related content production protocol
+            </h2>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="PS">
+                <h3>Synopsis of instruments:</h3>
+                <p>
+                    The instruments used by the iGEM-BIT team in the 2020 project will be consist of our own 
+                    designed fingertip gyro-driven microfluidic chips, lateral flow tomographic strips, temperature 
+                    control modules, optical sensing modules, and intelligent external machine frame structures. 
+                    The goal of this project is to design a palm-held laboratory capable of detecting 2019-nCoV 
+                    with high accuracy and throughput.
+                </p>
+                <p>
+                    In the process of the project development, we designed and completed the following experiments:
+                </p>
+                <ul>
+                    <p>1. Fabrication of photoresist chip.</p>
+                    <p>2. Fabrication of PMMA chip.</p>
+                    <p>3. Test strip</p>
+                </ul>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="PS">
+                <h3>Experimental display:</h3>
+
+
+                <h3>1. Fabrication of photoresist chips:</h3>
+                <ul>
+                    <li>
+                        <h3>Objective:</h3>
+                        <p>
+                            The basic model of the microfluidic chip based on fingertip gyroscope was fabricated 
+                            using the photoresist method under laboratory conditions, and the preliminary design 
+                            of the chip was verified.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Design:</h3>
+                        <p>
+                            In the experiment, we use a positive photoresist, which can dissolve in the developing 
+                            solution when the exposed part undergoes photochemical reaction under the condition of 
+                            ultraviolet irradiation, while the unexposed part is insoluble in the developing solution 
+                            and remains on the substrate. The same pattern on the mask will be copied to the substrate 
+                            to complete the fabrication of the designed chamber and channel.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Steps:</h3>
+                        <ul>
+                            <p>
+                                (1) The mask is cut and cleaned (firstly, it is cleaned with tap water, sprayed with 
+                                detergent, cleaned with detergent, then cleaned with deionized water, and finally 
+                                dried with a blower), which is convenient for subsequent experiments.
+                            </p>
+                            <p>
+                                (2) The underlying structure of the photogel chip:
+                            </p>
+                            <ul>
+                                <p>
+                                    ① Use a little photogel at the diagonal point of the mask frame, and solidify it 
+                                    with ultraviolet light to make the mask frame solidify stably on the glass slide. 
+                                    Add about 0.2 ml of photogel into the mask frame, cover with the mask, and push 
+                                    the photogel under the mask evenly with tweezers to fill the mask frame, and use 
+                                    the tweezers to drive away the bubbles under the mask. According to the thickness 
+                                    of the photogel tiles, the photogel is fixed by irradiating them with ultraviolet 
+                                    light for 25s-30s.
+                                </p>
+                                <p>
+                                    ②After the photocoagulation is solidified, gently pick up a corner with tweezers 
+                                    to observe whether the photocoagulation has solidified on the surface of the 
+                                    glass sheet. If there is no change of angle to observe, if it has solidified on 
+                                    the surface of the glass sheet, then tear off the mask of the surface quickly 
+                                    with tweezers.
+                                </p>
+                                <p>
+                                    ③Drop about 0.2 ml of photogel on the solidified surface again, and lay the mask 
+                                    on the track so that there are no bubbles between the mask and the underlying 
+                                    photogel. Special attention should be paid to aligning the mask tracks of each 
+                                    layer. The photogel was fixed by irradiation with ultraviolet light for 10s-15s.
+                                </p>
+                                <p>
+                                    ④After photocoagulation, gently pick up a corner and observe whether the 
+                                    photocoagulant is solidified on the surface of the underlying photocoagulant. 
+                                    If it has solidified, gently tear off the mask with tweezers. The process of 
+                                    tearing off the mask should not be too rapid and should be gentle.
+                                </p>
+
+                            </ul>
+                            <p>
+                                (3) Use a little photogel at the diagonal point of the mask, fix the mask frame on 
+                                the chromium plate, and fix the photogel with ultraviolet light. Repeat the above 
+                                steps to fix the second mask frame on the original basis. After fixing the mask 
+                                frame, point about 0.5 ml of photogel, cover it with a mask, try to make no bubbles 
+                                between the mask and the photogel, and tear the mask off the chrome plate slowly 
+                                with ultraviolet light for 30 s.
+                            </p>
+                            <p>
+                                (4) Clean and dry the mask and glass plate with the photogel lotion, align and bond 
+                                them together under the microscope, irradiate them with ultraviolet light for about 
+                                30 seconds, and tear off the mask quickly after confirming that the two have bonded. 
+                                Carefully observe to determine whether the chip channel is smooth and whether the 
+                                chamber track is blocked.
+                            </p>
+                            <p>
+                                (5) Intubation: put the gasket made into the intubation of the chip, insert the thin 
+                                tube that has roughened the orifice into the chip, fix it with photogel, and 
+                                illuminate it with ultraviolet light for 5 s. Repeat the above steps to intubate 
+                                each tube in turn.
+                            </p>
+                            <p>
+                                (6) Edge sealing: the edges of the chip were sealed sequentially with photogel and 
+                                illuminated with ultraviolet light for 30 s. Finally, place a 50 degree oven 
+                                overnight.
+                            </p>
+                        </ul>
+                    </li>
+                </ul>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <h3>2. Bonding of PMMA Chips</h3>
+                <ul>
+                    <li>
+                        <h3>Objective:</h3>
+                        <p>
+                            The purchased processed PMMA chips were bonded together to complete the final assembly 
+                            of the microfluidic chips.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Design：</h3>
+                        <p>
+                            As a thermoplastic, PMMA has a low melting point property. So we can realize chip 
+                            bonding of each layer of PMMA chip at high temperature.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Experimental materials:</h3>
+                        <p>
+                            Processed layered PMMA chips, absolute ethanol, distilled water, Petri dishes, muffle 
+                            stoves, glass plates, pins, clips.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Steps:</h3>
+                        <ul>
+                            <p>
+                                (1) Remove the surface membrane of PMMA chip, rinse the residual impurities on the 
+                                surface with absolute ethanol and distilled water, and place them on the Petri dish 
+                                to dry.
+                            </p>
+                            <p>
+                                (2) Adjust the muffle furnace temperature to 170 C and keep the temperature for 1 h.
+                            </p>
+                            <p>
+                                (3) Place the chip on the glass plate in turn, insert a micro pin at the specific 
+                                socket where the chip has been processed to help the chip bond, align the back cover 
+                                with another glass plate and tighten it with a clamp, and heat it for 6 minutes 
+                                before removing it.
+                            </p>
+                            <p>
+                                (4) After the glass plate is naturally cooled, remove the micro pin in the chip, and 
+                                then heat it for another 10 minutes to remove it to complete the chip bonding.
+                            </p>
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <h3>3. Preparation and assembly of colloidal gold strips</h3>
+                <ul>
+                    <li>
+                        <h3>Objective:</h3>
+                        <p>
+                            Preparation of colloidal gold strips for fluorescence signal detection.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Experimental materials:</h3>
+                        <p>
+                            Apt-21 solution, TE buffer, phosphate buffer, streptavidin, ultrafiltration tube, poly-A 
+                            solution, syringe, shaker, PVC plate, etc.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Steps:</h3>
+                        <ul>
+                            <h3>(1) Solution preparation for test line:</h3>
+                            <p>
+                                1OD Apt-21 solution was taken, centrifuged at 12,000 rpm for 30 s at 4℃, and prepared into 100μM storage solution using TE buffer.
+                            </p>
+                            <p>1 mg streptavidin was dissolved in 1 mL phosphate buffer.</p>
+                            <p>42μL of 1 mg/L streptavidin was mixed with 26 μL of Apt-21 solution and placed at room temperature for 3 h.</p>
+                            <p>The mixture was centrifuged at 12,000 rpm for 10 min at 4℃ in a 30 KD ultrafiltration tube, and the lower solution was discarded.</p>
+                            <p>Then invert the ultrafiltration tube, centrifuge 1000g at 44℃ for 30 min to obtain the solution, the total volume is about 30 μL.</p>
+                            <h3>(2) Solution configuration for quality control line</h3>
+                            <p>1OD Apt-21 solution was taken, centrifuged at 12,000 rpm for 30 s at 4℃, and prepared into 100μM storage solution using TE buffer.</p>
+                            <p>42μL of 1 mg/L streptavidin was mixed with 26 μL of poly-A solution and placed at room temperature for 3 h.</p>
+                            <p>The mixture was centrifuged at 12,000 rpm for 10 min at 4℃ in a 30 KD ultrafiltration tube, and the lower solution was discarded.</p>
+                            <p>Then invert the ultrafiltration tube, centrifuge 1000g at 44℃ for 30 min to obtain the solution, the total volume is about 30 μL.</p>
+                            <h3>(3) NC film streaking operation</h3>
+                            <p>Cut NC film about 20 cm long and fix it on the sample dispenser;</p>
+                            <p>Open the instrument, carry out initialization operation, and then set parameters to determine the values of X and Y. First extract air with syringe, then set the liquid capacity, then extract air once, adjust the distance between scribe needle and NC film, click RUN button;</p>
+                            <p>25 μL of Apt-2-avidin solution with a concentration of 5 OD/30 μL was taken and the scribed operation was carried out at a speed of 1 μL /cm.</p>
+                            <p>25 μL of poly-A-avidin solution with a concentration of 0.05 OD/30 μL was taken and the scribed operation was carried out at a speed of 1 μL /cm.</p>
+                            <p>Place in self-sealing bag and add appropriate amount of desiccant overnight.</p>
+                            <h3>(4) Treatment of sample pad</h3>
+                            <p>
+                                Cut 4 mm width sample pad;
+                                <br>
+                                The cut sample pad is packed in a self-sealing bag, and a proper amount of sample pad treatment buffer is added to make the sample pad completely immersed;
+                                <br>
+                                The self-sealed bags were placed on a shaker and incubated for 30 min.
+                                <br>
+                                Wash the sample pad with PBS solution until it is free of foam, dry it for future use.
+                            </p>
+                            <h3>(5) Assembly of test strips</h3>
+                            <p>
+                                Place the PVC board on the workbench and attach the NC film to the center of the PVC board.
+                                <br>
+                                The sample pad was placed on one side of the PVC board and overlapped with the NC film for about 2 mm;
+                                <br>
+                                The absorbent pad was placed on the other side of the PVC plate and overlapped with the NC film for about 2 mm and stored at room temperature after cutting.
+                            </p>
+
+
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <a name="4"></a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2 style="color:rgb(237, 88, 58)">
+                ④ Research on the popular science environment of the current universal platform
+            </h2>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="PS">
+                <p>
+                    Team BIT write a research report to investigate the popular science work environment of 
+                    Weibo and bilibili, two major platforms with a large number of users in China. Through this 
+                    research report, other iGEM teams can understand which platform is more suitable for science 
+                    popularization work, so as to help each team achieve better results. And we cooperated with 
+                    team SCUT-China to conduct research in this area.
+                </p>
+                <p>
+                    More information please click:
+                    <br>
+                    <br>
+                    <div class="aa" align="center" >
+                        <a id="linka" href="https://2020.igem.org/Team:BIT/Education" style="background: none !important; color: rgb(112, 86, 151)"> BIT`s research report </a>
+                    </div>
+                    <br>
+                    <div class="aa" align="center" >
+                        <a id="linkb" href="https://2020.igem.org/Team:SCUT_China/Education" style="background: none !important; color: rgb(112, 86, 151)"> The WIKI address of team SCUT_China </a>
+                    </div>
+                    
+                    
+                </p>
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div id="foot-box" style="background-color: rgb(34, 34, 34); text-align: center; color: rgb(255, 255, 255);">
+            <br>
+            Created By Beijing Institute of Technology
+            <br>
+            <br>
+        </div>
+    </article>
+
+
+    <a href="#0" class="cd-top">Back Top</a>
+</div>
+
+
+<style>
+    body {
+        background:url(https://2020.igem.org/wiki/images/0/06/T--BIT--bg1.png);
+    }
+    * {margin:0; padding: 0;}
+    body .inner {
+        padding: 20px;
+    }
+    body .inner h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+    }
+    body .inner .router a{
+        text-decoration: none;
+        color: rgb(120, 120, 120);
+    }
+    body .inner .router a:hover{
+        color: rgb(31, 160, 180);
+    }
+    #main-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    nav {
+        width: 25%;
+        float: left;
+    }
+    nav .inner {
+        width: 18%;
+        margin: 0;
+        position: fixed;
+        /* height: 100%; */
+        background:  rgb(251, 251, 251);
+        box-shadow: 0 0 10px rgba(0,0, 0, .5);
+        padding: 10px;
+    }
+    nav .inner .contact {
+        background-color: rgb(34, 34, 34);
+        padding: 10px;
+    }
+    nav .inner .nav-bar {
+        background-color: rgb(34, 34, 34);
+        padding: 10px;
+    }
+    nav .hidden {
+        height: 1px;
+    }
+    nav ul li {
+        /*去掉列表项目的符号*/
+        list-style-type: none;
+    }
+    nav ul a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    nav ul a:hover{
+        color: rgb(31, 160, 180);
+    }
+    article {
+        width: 65%;
+        float: left;
+        background: rgb(251, 251, 251);
+        margin: 0;
+        padding: 0;
+        box-shadow:  0px 0px 20px rgba(0,0,0,.5);
+    }
+    article .inner {
+        padding: 40px;
+    }
+    #linka{
+        color: rgb(255, 255, 255);
+        width: 40%;
+    }
+    #linkb{
+        color: rgb(255, 255, 255);
+        width: 40%;
+    }
+    /*推断页面已经帮我们调了一些间距*/
+    #main-content h1{
+        line-height: 3rem;
+    }
+    #main-content p{
+        font-size: .9rem;
+        line-height: 2rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    #main-content h2 {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:BIT/js/jquery-3.5.1.min.js&action=raw&ctype=text/javascript"></script>
+
+<!--这是返回顶部的js代码，单独抽离之后会失效-->
+<script>
+    jQuery(document).ready(function($){
+        var offset = 300,
+        offset_opacity = 1200,
+        scroll_top_duration = 700,
+        $back_to_top = $('.cd-top');
+    
+        
+        $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                $back_to_top.addClass('cd-fade-out');
+            }
+        });
+    
+        
+        $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: 0 ,
+                 }, scroll_top_duration
+            );
+        });
+    });
+</script>
+</body>
+</html>
