@@ -22,10 +22,32 @@
         .a-ul li a {
             background: none !important;
         }
+        .textSquare ::before {
+            filter: blur(50px);
+        }
 
 
 
     </style>
+
+<script>
+$(function () {
+    $('#hs_myid').click(function(){
+    var hs_hight = $($(this).attr("href")).offset().top;
+    $("html, body").animate({
+        scrollTop: hs_hight + "px"
+        }, 1000);
+    return false;
+    });
+});
+
+function changeSizetoBig(e) {
+    e.style.width = '6rem';
+}
+function changeSizetoSmall(e) {
+    e.style.width = '5rem';
+}
+</script>
 </head>
 
 <body class="dm-demo1">
@@ -84,27 +106,40 @@
             </div>
         </div>
 
+        <a id="hs_myid" href="#a1">
+            <img src="https://2020.igem.org/wiki/images/0/08/T--BIT--arrow.svg" 
+            style="position: absolute; 
+            top:5%; left: 45%; 
+            width: 5rem;"
+            onmouseover="changeSizetoBig(this)"
+            onmouseout="changeSizetoSmall(this)"
+            >
+        </a>
         <br>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <div align="center">
-            <div style="width: 50%;">
-                <strong>
-                    <p style="color: rgb(197, 154, 94); font-size: 1.2rem; font-family: 'Poppins', sans-serif;">Welcome to the wiki home page of Beijing Institute of Technology,
-                        If you want to understand each part briefly,
-                        please click the corresponding box
-                    </p>
-                </strong>
-            </div>
         </div>
 
 
     </header>
     <!-- Demo Navigation -->
-    <div">
+    <div class="hs" id="a1">
+        <br>
+        <br>
+        <div align="center">
+            <div id="textSquare" style="width: 50%; ">
+                <strong>
+                    <p style="color: rgb(196, 156, 98); font-size: 1.2rem; font-family: 'Poppins', sans-serif;">
+                       Welcome to visit wiki of Beijing institute of technology <br>
+                       <br>
+                       You can click on each box to get a summary or go back to the top navigation bar.
+                    </p>
+                </strong>
+            </div>
+        </div>
         <nav class="nav clearfix">
             <button class="nav-el" id="el-topleft" data-id="ov-topleft"><span class="icon-heart" style="font-size: 2rem; left: 35%; color: rgb(0, 101, 97);">Project</span></button>
             <button class="nav-el" id="el-topright" data-id="ov-topright"><span class="icon-cloud" style="font-size: 2rem; left: 35%; color: rgb(0, 101, 97);">Practice</span></button>
