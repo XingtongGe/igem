@@ -1,22 +1,46 @@
-# igem
+[TOC]
 
-这是存放igem代码的仓库
+# IGEM
 
-![image-20201024225220454](C:\Users\lijunlin123\AppData\Roaming\Typora\typora-user-images\image-20201024225220454.png)
+[英文](https://github.com/a-layfolk/igem/blob/master/README.md)	|	[中文](https://github.com/a-layfolk/igem/blob/master/README_Chinese.md) 
 
-![image-20201024225340783](C:\Users\lijunlin123\AppData\Roaming\Typora\typora-user-images\image-20201024225340783.png)
+## 项目结构：
 
-![image-20201024225925241](C:\Users\lijunlin123\AppData\Roaming\Typora\typora-user-images\image-20201024225925241.png)
+```html
+IGEM
+|-- 1_Home
+	|-- Home
+|-- 2_Project
+	|-- Description
+	|-- Bio
+	|-- Hardware
+	|-- Model
+	|-- Engineering
+	|-- Implementation
+	|-- Proof_Of_Concept
+	|-- Contribution
+|-- 3_Practice
+	|-- Overview
+	|-- Silver
+	|-- Integrated_Practice
+	|-- Education
+|-- 4_Judge
+	|-- Medal
+	|-- Safety
+|-- 5_Team
+	|-- Members
+	|-- Collaborations
+	|-- Partnership
+	|-- Notebook
+	|-- Attributions
+	|-- Excellence_in_Another_Area
+```
 
-![image-20201025010647652](C:\Users\lijunlin123\AppData\Roaming\Typora\typora-user-images\image-20201025010647652.png)
+## 简单介绍
 
-https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/20201025010703.png
+这是北京理工大学2020年IGEM队伍的代码
 
-http://www.bit.edu.cn/images/content/2018-11/20181101030303975634.jpg
-
-
-
-https://2020.igem.org/wiki/images/3/3a/T--BIT--bg5.png
+如果你想查看效果, 你可以访问这个地址: https://2020.igem.org/Team:BIT.
 
 
 
@@ -24,30 +48,3 @@ https://2020.igem.org/wiki/images/3/3a/T--BIT--bg5.png
 
 
 
----
-
-////////////////////https://2020.igem.org/wiki/images/e/eb/T--BIT--autumn1.jpg
-
-https://2020.igem.org/wiki/images/f/fa/T--BIT--autumn2.jpg
-
-////////////////////https://2020.igem.org/wiki/images/3/33/T--BIT--autumn3.jpg
-
-https://2020.igem.org/wiki/images/0/01/T--BIT--autumn4.jpg
-
-///////////////////https://2020.igem.org/wiki/images/4/4f/T--BIT--autumn5.jpg
-
-////////////////////https://2020.igem.org/wiki/images/e/e1/T--BIT--autumn6.jpg
-
-//////////////////https://2020.igem.org/wiki/images/c/cc/T--BIT--autumn7.jpg
-
-/////////////////////https://2020.igem.org/wiki/images/b/b9/T--BIT--autumn8.png
-
-//////////////////////https://2020.igem.org/wiki/images/e/e5/T--BIT--autumn9.jpg
-
-/////////////////////https://2020.igem.org/wiki/images/3/31/T--BIT--autumnA.jpg
-
-https://2020.igem.org/wiki/images/1/10/T--BIT--autumnC.jpg
-
-////////////////////https://2020.igem.org/wiki/images/3/38/T--BIT--autumnE.jpg
-
-//////////////////https://2020.igem.org/wiki/images/c/c7/T--BIT--autumnH.jpg
