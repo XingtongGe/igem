@@ -1,12 +1,24 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:BIT/css/multi_drop_menu&action=raw&ctype=text/css" />
-    <style>
-        body{
-            background:url(https://2020.igem.org/wiki/images/3/3a/T--BIT--bg5.png);
-            background-size: 100%;
-        }
-    </style>
+<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:BIT/css/multi_drop_menu&action=raw&ctype=text/css" />
+<style>
+    body{
+        background:url(https://2020.igem.org/wiki/images/3/3a/T--BIT--bg5.png);
+        background-size: 100%;
+    }
+</style>
+
+
+<style>
+    /*css3实现照片墙的样式*/
+    .container{width:960px;height:450px;margin:60px auto;position:relative;}
+    .container img{position:absolute;padding:10px 10px 15px;background:#fff;border:1px solid #ddd;-webkit-transition:1s ;-moz-transition:1s ;transition:1s ;z-index:1;}
+    .container img:hover{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);transform:scale(1.1);-webkit-box-shadow:5px 5px 5px #ddd;-moz-box-shadow:5px 5px 5px #ddd;box-shadow:5px 5px 5px #ddd;z-index:2;cursor:pointer;}
+    .pic3{bottom:0;right:0;-webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);transform:rotate(5deg);}
+    .pic4{bottom:0;left:300px;-webkit-transform:rotate(-10deg);-moz-transform:rotate(-10deg);transform:rotate(-10deg);}
+    .pic5{bottom:0;left:0;-webkit-transform:rotate(-10deg);-moz-transform:rotate(-10deg);transform:rotate(-10deg);}
+</style>
+
 <script>
 $(function () {
             $('#hs_myid').click(function(){
@@ -121,27 +133,20 @@ function changeSizetoSmall(e) {
                 </strong>
             </div>
         </div>
-        <br>
-        <br>
-        <div align="center">
+        <div class="htmleaf-container">
+            <div class="container">
                 <a href="https://2020.igem.org/Team:BIT/Silver" style="background: none !important; text-decoration: none;">
-                    <img src="https://2020.igem.org/wiki/images/1/1c/T--BIT--Overview1.jpg" 
-                    style="width: 11.2%;">
-                    <!-- <span style="position: relative; left:-4rem; top: -4rem; font-size: .9rem; color: rgb(255, 255, 255)">
-                        Silver
-                    </span> -->
+                    <img src="https://2020.igem.org/wiki/images/c/ca/T--BIT--Overview3.jpg" class="pic3">
                 </a>
                 <a href="https://2020.igem.org/Team:BIT/Integrated_Practice" style="background: none !important; text-decoration: none;">
-                    <img src="https://2020.igem.org/wiki/images/c/c3/T--BIT--Overview2.jpg" 
-                    style="width: 15%;">
-                    <!-- <span style="position: relative; left:-9rem; top: -4rem; font-size: .9rem; color: rgb(255, 255, 255)" >Integrated Practice</span> -->
-                </a> 
-                <a href="https://2020.igem.org/Team:BIT/Education" style="background: none !important; text-decoration: none;">
-                    <img src="https://2020.igem.org/wiki/images/c/ca/T--BIT--Overview3.jpg" 
-                    style="width: 15%;">
-                    <!-- <span style="position: relative; left:-8rem; top:-4rem; font-size: .9rem; color: rgb(255, 255, 255)">Education</span> -->
+                    <img src="https://2020.igem.org/wiki/images/c/c3/T--BIT--Overview2.jpg" class="pic4">
                 </a>
+                <a href="https://2020.igem.org/Team:BIT/Education" style="background: none !important; text-decoration: none;">
+                    <img src="https://2020.igem.org/wiki/images/1/1c/T--BIT--Overview1.jpg" class="pic5" style="width: 25%;">
+                </a>
+            </div>
         </div>
+        
     </div>
 </div>
 
