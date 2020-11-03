@@ -34,6 +34,8 @@ IGEM
 	|-- Notebook
 	|-- Attributions
 	|-- Excellence_in_Another_Area
+|-- 6_Poster
+	|-- Poster
 ```
 
 ## 简单介绍
@@ -41,10 +43,6 @@ IGEM
 这是北京理工大学2020年IGEM队伍的代码
 
 如果你想查看效果, 你可以访问这个地址: https://2020.igem.org/Team:BIT.
-
-
-
-
 
 
 

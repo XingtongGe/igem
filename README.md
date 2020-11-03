@@ -34,6 +34,8 @@ IGEM
 	|-- Notebook
 	|-- Attributions
 	|-- Excellence_in_Another_Area
+|-- 6_Poster
+	|-- Poster
 ```
 
 ## Brief introduction
