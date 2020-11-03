@@ -1,0 +1,455 @@
+{{Poster}}
+
+<html>
+
+<style>
+#content {
+        background: url(https://2020.igem.org/wiki/images/0/06/T--BIT--bg1.png);
+}
+</style>
+<!--这是返回顶部控件的css,不要修改，单独抽离后会失效-->
+<style>
+    .cd-top {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 40px;
+        right: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        /* image replacement properties */
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        background: rgba(232, 98, 86, 0.8) url(https://2020.igem.org/wiki/images/0/0f/T--BIT--Poster_cd-top-arrow.svg) no-repeat center 50%;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+        -moz-transition: opacity .3s 0s, visibility 0s .3s;
+        transition: opacity .3s 0s, visibility 0s .3s;
+    }
+
+    .cd-top.cd-is-visible,
+    .cd-top.cd-fade-out,
+    .no-touch .cd-top:hover {
+        -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+        -moz-transition: opacity .3s 0s, visibility 0s 0s;
+        transition: opacity .3s 0s, visibility 0s 0s;
+    }
+
+    .cd-top.cd-is-visible {
+        /* the button becomes visible */
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .cd-top.cd-fade-out {
+        /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+        opacity: .5;
+    }
+
+    .no-touch .cd-top:hover {
+        background-color: #e86256;
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .cd-top {
+            right: 20px;
+            bottom: 20px;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        .cd-top {
+            height: 60px;
+            width: 60px;
+            right: 30px;
+            bottom: 30px;
+        }
+    }
+</style>
+
+
+<div class="page_wrapper">
+    <div class="page_center">
+
+
+<!---Place the content of your poster inside this div---> 	
+    <div class="poster_w content">
+                            
+
+    <div class="row">
+        <div class="section full first_text" id="title">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                    
+            <div class="info">
+                <div class="title">Poster Title</div>
+                <div class="text">T
+                    This is Poster Title
+                </div>
+            </div>
+        </div>
+    </div>
+                
+                
+    <div class="row">
+            
+        <div class="section half" id="introduction">
+            <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->	
+            
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg" alt="">
+                    
+            <div class="info">
+                
+                <div class="title">introduction </div>
+                
+                <div class="text">
+                    This is introduction
+                </div>
+            </div>			
+        </div>
+
+        <div class="section half" id="inspiration">
+            
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg" alt="">
+            
+                
+            <div class="info">
+
+                <div class="title">inspiration</div>
+                <div class="text">
+                    This is inspiration
+                </div>
+            </div>	
+        </div>			
+            
+    </div>				
+                                
+
+
+    <div class="row">
+        
+        <div class="section full" id="project">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+            
+            <div class="info">	
+                <div class="title">Project(Methodology, Results and Conclusions)</div>
+                <div class="text">
+                    Project(Methodology, Results and Conclusions)
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <div class="row">
+
+        <div class="section half" id="bio">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg" alt="">
+
+            <div class="info">
+                <div class="title">BIO</div>
+                <div class="text">
+                    This is BIO
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section half" id="hardware">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg" alt="">
+
+            <div class="info">
+                <div class="title">HareWare</div>
+                <div class="text">
+                    This is HardWare
+                </div>
+            </div>
+        </div>
+
+    </div>
+        
+
+
+    <div class="row">	
+
+        <div class="section quarter" id="sampale_pretratment">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">	
+            <div class="info">
+                <div class="title">Sample pretratment</div>
+                <div class="text">
+                    This is Sample pretratment
+                </div>
+            </div>				
+        </div>
+
+        <div class="section quarter" id="nucleic ">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">	
+            <div class="info">
+                <div class="title">Nucleic acid aptamer replacement</div>
+                <div class="text">
+                    This is Nucleic acid aptamer replacement
+                </div>
+            </div>				
+        </div>
+
+        <div class="section quarter" id="microfluidic">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">	
+            <div class="info">
+                <div class="title">Microfluidic chip</div>
+                <div class="text">
+                    This is Microfluidic chip
+                </div>
+            </div>				
+        </div>
+
+        <div class="section quarter" id="liquid">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">	
+            <div class="info">
+                <div class="title">Liquid flow Simulation</div>
+                <div class="text">
+                    This is Liquid flow Simulation
+                </div>
+            </div>				
+        </div>
+
+        
+    </div>				
+                                
+
+
+
+
+    <div class="row">	
+        <div class="section quarter" id="rca">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">	
+            <div class="info">
+                <div class="title">RCA isothermal amplification</div>
+                <div class="text">
+                    RCA isothermal amplification
+                </div>
+            </div>				
+        </div>
+
+        <div class="section quarter" id="nucleic_acid">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">	
+            <div class="info">
+                <div class="title">nucleic acid signal detection</div>
+                <div class="text">
+                    This is nucleic acid signal detection
+                </div>
+            </div>				
+        </div>
+
+        <div class="section quarter" id="microfluidic">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">	
+            <div class="info">
+                <div class="title">Temperature</div>
+                <div class="text">
+                    Temperature control 
+                </div>
+            </div>				
+        </div>
+
+        <div class="section quarter" id="liquid">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">	
+            <div class="info">
+                <div class="title">Smartphone support</div>
+                <div class="text">
+                    This is Smartphone support
+                </div>
+            </div>				
+        </div>
+
+    </div>		
+
+
+                                
+    <div class="row">	
+        <div class="section full" id="human_practice">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                        
+            <div class="info">
+                <div class="title">human Practice</div>
+                <div class="text"> 
+                This is Human Practice
+                </div>
+            </div>
+                        
+        </div>
+    </div>	
+
+
+
+    <div class="row">
+        <div class="section third" id="background_research">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                        
+            <div class="info">
+                <div class="title">Background research</div>
+                <div class="text"> 
+                This is Background research
+                </div>
+            </div>
+                        
+        </div>
+
+        <div class="section third" id="program_improvement">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                        
+            <div class="info">
+                <div class="title">Program improvement</div>
+                <div class="text"> 
+                This is Program improvement
+                </div>
+            </div>
+                        
+        </div>
+
+        <div class="section third" id="education">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                        
+            <div class="info">
+                <div class="title">Education</div>
+                <div class="text"> 
+                This is Education
+                </div>
+            </div>
+                        
+        </div>
+
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="section full" id="collabration">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                        
+            <div class="info">
+                <div class="title">Collabration and partnership</div>
+                <div class="text"> 
+                This is Collabration and partnership
+                </div>
+            </div>	
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="section third" id="implementation">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                        
+            <div class="info">
+                <div class="title">implementation</div>
+                <div class="text"> 
+                This is implementation
+                </div>
+            </div>
+                        
+        </div>
+
+        <div class="section third" id="program_improvement">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                        
+            <div class="info">
+                <div class="title">contribution</div>
+                <div class="text"> 
+                This is Contribution
+                </div>
+            </div>
+                        
+        </div>
+
+        <div class="section third" id="excellence_in_Another_Area">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                        
+            <div class="info">
+                <div class="title">Excellence_in_Another_Area</div>
+                <div class="text"> 
+                This is Excellence_in_Another_Area
+                </div>
+            </div>
+                        
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="section third" id="references">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                        
+            <div class="info">
+                <div class="title">References</div>
+                <div class="text"> 
+                This is References
+                </div>
+            </div>
+                        
+        </div>
+
+        <div class="section two_thirds" id="authors_and_attributions">
+            <img src="https://cdn.jsdelivr.net/gh/a-layfolk/FigureBed/img/blog/competition/igem/20201027205606.jpg">
+                        
+            <div class="info">
+                <div class="title">Authors and Attributions</div>
+                <div class="text"> 
+                This is Authors and Attributions
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+
+    </div>
+        
+    <!--This is where the selected content will be displayed - Don't change this section!-->	
+    <div class="poster_w display">	
+        <h3 id="section_title"></h3>		
+        <p id="section_text"></p>		
+    </div>
+
+    <a href="#0" class="cd-top">Back Top</a>
+    </div>
+</div>
+
+
+<script type="text/javascript"
+        src="https://2020.igem.org/wiki/index.php?title=Template:BIT/js/jquery-3.5.1.min.js&action=raw&ctype=text/javascript"></script>
+
+    <!--这是返回顶部的js代码，单独抽离之后会失效-->
+    <script>
+        jQuery(document).ready(function ($) {
+            var offset = 300,
+                offset_opacity = 1200,
+                scroll_top_duration = 700,
+                $back_to_top = $('.cd-top');
+
+
+            $(window).scroll(function () {
+                ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+                if ($(this).scrollTop() > offset_opacity) {
+                    $back_to_top.addClass('cd-fade-out');
+                }
+            });
+
+
+            $back_to_top.on('click', function (event) {
+                event.preventDefault();
+                $('body,html').animate({
+                    scrollTop: 0,
+                }, scroll_top_duration
+                );
+            });
+        });
+    </script>
+
+</html>
