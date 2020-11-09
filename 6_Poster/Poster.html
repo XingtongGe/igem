@@ -343,9 +343,44 @@
                 <div class="section quarter" id="temprature_control">
                     <img src="https://2020.igem.org/wiki/images/2/24/T--BIT--Poster_temprature_control.jpg">
                     <div class="info">
-                        <div class="title">Temperature</div>
+                        <div class="title">Temperature control</div>
                         <div class="text">
-                            Temperature control
+                            Our temperature control module can provide our amplification with stable temperature, the commonly used PCR amplification on the temperature change after heating denaturation and annealing of two steps, which requires the device in the temperature control needs to have the ability of rapid heating and cooling, which means you need larger space to provide equipment heat dissipation of the environment, but also has great power to provide our equipment. However, because of our need for miniaturization and portability, we did not adopt PCR as our amplification technology. Instead, we adopted an amplification method with low requirement for temperature change to meet our demand for portability. This amplification method only needs to be amplified at constant temperature.
+                            
+                            <br>
+                            <br>
+                            <br>
+
+                            Since the amplification temperature we needed was constant, we initially considered whether we could use human body to amplify the nucleic acid temperature of our chip. However, considering the biosafety and stable temperature required for amplification, we looked elsewhere. We achieve the temperature control of amplification by a temperature control circuit with a customized heating film. We use the temperature sensor to collect the temperature signal, the microprocessor MSP430 built-in A/D module is used to take sample, software control algorithm is used to calculate the control quantity. Through the I/O port output power, we control MOS tube or load to switch on or off, output constant current by controling hardware circuit, and achieve heating and cooling process. The stability of temperature is guaranteed relying on simple control PID algorithm.
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <img src="https://2020.igem.org/wiki/images/4/4d/T--BIT--Poster_Temperature_control_1.png" alt="">
+                            <div align="center" style="font-size: .8rem;">
+                                Figure1. Customized heating film
+                            </div>
+
+                            <img src="https://2020.igem.org/wiki/images/d/de/T--BIT--Poster_Temperature_control_2.png" alt="">
+                            <div align="center" style="font-size: .8rem;">
+                                Figure2. Temperature control circuit
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+
+                            The following picture is the image of temperature data fitting using Matlab after the temperature sensor is used to receive the temperature. 
+                            
+                            <br>
+                            <br>
+                            <br>
+
+                            <img src="https://2020.igem.org/wiki/images/1/11/T--BIT--Poster_Temperature_control_3.png" alt="">
+                            <div align="center" style="font-size: .8rem;">
+                                Figure3. Temperature curve of heating process fitted by matlab
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -355,7 +390,53 @@
                     <div class="info">
                         <div class="title">Smartphone support</div>
                         <div class="text">
-                            This is Smartphone support
+                            For colloidal gold detection, after taking a photo with a mobile phone, we analyze the R value after the image is collected and compare it with the positive R value to determine the  result of the test.
+                            
+                            <br>
+                            <br>
+                            <br>
+
+                            Through the establishment of the small program, we have completed the following functions: reading the colloidal gold image, fitting the relationship between image features and solution concentration, outputting the image, and outputting the predicted concentration.
+
+                            <br>
+                            <br>
+                            <br>
+
+                            Software interactive program module: Based on the development of WeChat mini program, extract features such as image color (RGB), and use the least square method to perform linear fitting to obtain the relationship between features and concentration. Least squares method is a mathematical optimization technique. It finds the best function match of the data by minimizing the sum of squares of errors. The least square method can be used to easily obtain unknown data, and minimize the sum of squares of errors between the obtained data and the actual data. Software interaction process: the mobile phone shoots multiple images, the mini program reads the images, manually enters the solution concentration, image processing, fitting the relationship between the image characteristics and the solution concentration, the new image is input in the mini program, and the predicted concentration is output.
+                            
+                            <br>
+                            <br>
+                            <br>
+
+                            <img src="https://2020.igem.org/wiki/images/8/8d/T--BIT--Poster_Smartphone_support_1.png" alt="">
+                            <div align="center" style="font-size: .8rem;">
+                                Figure1. WeChat mini program initial page
+                            </div>
+
+                            <img src="https://2020.igem.org/wiki/images/5/53/T--BIT--Poster_Smartphone_support_2.jpeg" alt="">
+                            <div align="center" style="font-size: .8rem;">
+                                Figure2. Interface page
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+
+                            To eliminate the influence of imaging differences between different phones, we provide 6 standard colloidal gold test strips. After tapping the start button，users should first upload more than 3 pictures of standard strips to generate a standard curve only for the specific smartphone. Then upload the strip picture we want to be tested and get the result.
+
+                            <br>
+                            <br>
+                            <br>
+
+                            For the detection of the results, we use mobile phones to take photos and upload the collected images to WeChat mini program. After reading the colloidal gold images,
+
+                            <br>
+                            <br>
+                            <br>
+
+                            The least square method was used to fit the relation between image color and solution concentration through WeChat mini program, and the final output predicted concentration.
+
+
                         </div>
                     </div>
                 </div>
@@ -371,7 +452,7 @@
                     <div class="info">
                         <div class="title">human Practice</div>
                         <div class="text">
-                            This is Human Practice
+                            Although this year was affected by the COVID-19, the BIT team still carried out a lot of creative work in three aspects: background research, Program improvement and education.
                         </div>
                     </div>
 
@@ -387,7 +468,19 @@
                     <div class="info">
                         <div class="title">Background research</div>
                         <div class="text">
-                            This is Background research
+                            After thorough investigation, we have determined to make a highly accurate, simple and portable new coronavirus detection device, which should be able to help hospitals in communities, rural areas and other places as well as large-scale population detection and investigation. Therefore, we determined the target audience based on the characteristics of the project, conducted interviews and surveys with the target audience, and asked them their suggestions for our project.
+
+                            <br>
+                            <br>
+                            <br>
+
+                            Their opinions helped us determine that our project can help solve real-world problems.
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <img src="https://2020.igem.org/wiki/images/f/f9/T--BIT--Poster_Background_research_2.png" alt="">
                         </div>
                     </div>
 
@@ -399,7 +492,14 @@
                     <div class="info">
                         <div class="title">Program improvement</div>
                         <div class="text">
-                            This is Program improvement
+                            In the middle of the project, we participated in a number of iGEMer gatherings and had in-depth exchanges with the teams we were cooperating with. We received many suggestions to help us improve the project. At the same time, we also interviewed companies and gained a lot of inspiration. After we upgraded the project, we visited the doctors we interviewed and got their further suggestions.
+                            
+                            <br>
+                            <br>
+                            <br>
+
+                            <img src="https://2020.igem.org/wiki/images/4/4f/T--BIT--Poster_Program_improvement_1.png" alt="">
+                            
                         </div>
                     </div>
 
@@ -411,7 +511,25 @@
                     <div class="info">
                         <div class="title">Education</div>
                         <div class="text">
-                            This is Education
+                            In this year's popular science publicity work, the BIT team has done a lot of work with "online publicity" and " Team inheritance" as its work goals.
+
+                            <br>
+                            <br>
+                            <br>
+
+                            In terms of online publicity, the BIT team summarized past online work experience and wrote a research report, hoping to help more teams in popularizing science. At the same time, in order to form a bigger brand so that our science popularization work can help more people, we united the other two teams to jointly establish the "Science for All Alliance", hoping to make the current science popularization work better .
+
+                            <br>
+                            <br>
+                            <br>
+
+                            In Team inheritance, BIT team created "course to iGEM" and "Student to teacher", hoping to attract more students to become iGEMer. At the same time, we have prepared a series of courses and lectures to help them become more professional iGEMer.
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <img src="https://2020.igem.org/wiki/images/3/38/T--BIT--Poster_Education_1.png" alt="">
                         </div>
                     </div>
 
